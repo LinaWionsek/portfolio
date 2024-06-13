@@ -1,3 +1,102 @@
+@import "../../../styles.scss";
+
 section {
-    height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
+  height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: $montserratFont;
+    color: $red;
+  }
 }
+
+.img-container {
+  display: flex;
+  position: relative;
+
+  .ellipse1 {
+    position: relative;
+    margin-top: -120px;
+    height: 800px;
+    width: 600px;
+  }
+
+  .profile-picture {
+    position: absolute;
+    bottom: 0;
+    height: 900px;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  margin-right: 100px;
+  //   gap: -20px;
+}
+
+.main-headline {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  //   font-size: 128px;
+  font-weight: 800;
+  font-family: $balooFont;
+  color: $red;
+}
+
+.frontend {
+  line-height: 153px;
+  letter-spacing: -2.5%;
+  font-size: 128px;
+}
+
+.developer {
+  line-height: 142px;
+  letter-spacing: -2%;
+  font-size: 118px;
+  margin-top: -40px;
+}
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $montserratFont;
+  color: $red;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 27.6px;
+ 
+  img {
+    margin-bottom: -7px;
+  }
+
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia-icons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -250px;
+  bottom: -50px;
+  gap: 25px;
+  img {
+    width: 40px;
+  }
+}
+

@@ -1,0 +1,9 @@
+.max-width {
+  width: 1440px;
+  overflow: hidden;
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+}
