@@ -94,8 +94,9 @@ section {
   flex-direction: column;
   position: relative;
   right: -250px;
-  bottom: -50px;
+  bottom: -85px;
   gap: 25px;
+  height: fit-content;
   img {
     width: 40px;
   }
