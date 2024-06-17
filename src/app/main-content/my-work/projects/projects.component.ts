@@ -11,7 +11,7 @@ import {ProjectsService} from '../../../services/projects/projects.service';
 export class ProjectsComponent {
   projectsservice = inject(ProjectsService);
 
-  openGithub(url: string) {
+  openURL(url: string) {
     window.open(url, '_blank');
   }
 }

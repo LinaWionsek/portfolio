@@ -11,7 +11,7 @@ export class ProjectsService {
     {
       img: 'join.png',
       name: 'Join',
-      stack: 'Angular | TypeScript | HTML | CSS | Firebase ',
+      tech_stack: 'Angular | TypeScript | HTML | CSS | Firebase ',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       demo: 'https://github.com',
       github: 'https://github.com',
