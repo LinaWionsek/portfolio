@@ -1,4 +1,34 @@
-<div>
-    <div>BILD</div>
-    <div>NAME</div>
-</div>
+<section>
+
+
+
+        @for(singleproject of projectsservice.projects; track singleproject.name; let index = $index;){
+
+        <!-- //class="project-container" -->
+        <!-- fruit.stars > 4 ? fontColorGood: fontColorBad -->
+
+        <!-- <p [ngClass]="{'fontColorBad': fruit.stars < 3, 'fontColorGood': fruit.stars >= 3}"> ({{fruit.stars}})</p> -->
+
+
+        <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" class="project-container">
+            
+            <a [href]="singleproject.demo" target="_blank">
+                <img class="preview" src="/img/{{singleproject.img}}">
+            </a>
+        
+            <div [ngClass]="{'project-info-reverse': index === 1}" class="project-info">
+                <!-- , 'project-info': index !== 1 -->
+                <div class="headline">{{singleproject.name}}</div>
+                <div class="stack">{{singleproject.stack}}</div>
+                <div class="description">{{singleproject.description}}</div>
+                <div><button (click)="openGithub(singleproject.github)" target="_blank">Github</button></div>
+                
+            </div>
+           
+        </div>
+
+        }
+
+   
+
+</section>

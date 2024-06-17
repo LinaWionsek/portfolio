@@ -1,0 +1,52 @@
+@import "../../../../styles.scss";
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.project-container {
+  display: flex;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.project-info-reverse {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.headline {
+  font-size: 45px;
+  line-height: 54px;
+  font-family: $balooFont;
+  color: $red;
+}
+
+button {
+  height: 58px;
+  width: 137px;
+  border-radius: 10px;
+  border: 2px solid $red;
+  color: $red;
+  background-color: white;
+  font-family: $montserratFont;
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 20px;
+  padding: 15px 30px;
+}
+
+.preview {
+  &:hover {
+    cursor: pointer;
+  }
+}
