@@ -7,14 +7,14 @@
 
         <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" class="project-container">
 
-            <a [href]="singleproject.demo" target="_blank">
-                <img class="preview" src="/img/{{singleproject.img}}">
+            <a [href]="singleproject.demo" target="_blank" class="project-demo">
+                <img src="/img/{{singleproject.img}}">
             </a>
 
             <div [ngClass]="{'project-info-reverse': index === 1}" class="project-info">
-                <div class="headline">{{singleproject.name}}</div>
-                <div class="stack">{{singleproject.stack}}</div>
-                <div class="description">{{singleproject.description}}</div>
+                <div class="project-headline">{{singleproject.name}}</div>
+                <div class="project-tech-stack">{{singleproject.tech_stack}}</div>
+                <div class="project-description">{{singleproject.description}}</div>
                 <div><button (click)="openURL(singleproject.github)" target="_blank">Github</button></div>
             </div>
 
@@ -24,6 +24,11 @@
 
     </div>
 
-
+width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
 </section>
