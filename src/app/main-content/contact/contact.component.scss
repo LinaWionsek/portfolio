@@ -1,6 +1,69 @@
+@import "../../../styles.scss";
+
 section {
-    background: linear-gradient(to bottom, #ffffff, #ffeaea);
-    width: 100%;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+h1 {
+  font-size: 90px;
+  line-height: 108px;
+  font-family: $balooFont;
+  color: $red;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  font-family: $montserratFont;
+  color: $red;
+}
+
+form {
+  width: 617px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid $red;
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+
+textarea {
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid $red;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  height: 202px;
+  max-height: 250px;
+  min-height: 202px;
+  max-width: 100%;
+  min-width: 617px;
+}
+.contact-container {
+  display: flex;
+
+  > div {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    span {
+      font-family: $montserratFont;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+.red {
+  color: $red;
 }
