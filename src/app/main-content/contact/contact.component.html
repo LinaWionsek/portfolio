@@ -20,14 +20,14 @@
                         Your name is required
                     </span>
                 </div>
-                <input class="" name="email " type="text" placeholder="Your email" id="" required>
+                <input class="mt-32" name="email " type="text" placeholder="Your email" id="" required>
                 <div class="warning-field">
                     <span id="warning-text-email" class="warning-text d-none">
                         Your email is required
                     </span>
                 </div>
             </div>
-            <div class="textarea-field">
+            <div class="textarea-field mt-32">
                 <textarea name="message" type="text" placeholder="Your message" id="" required></textarea>
                 <div class="warning-field">
                     <span id="warning-text-email" class="warning-text d-none">
@@ -35,11 +35,19 @@
                     </span>
                 </div>
             </div>
-            <div class="checkbox-with-policy">
-                <input name="myCheckbox" type="checkbox" id="checkbox_id">
-                <span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
+            <div class="checkbox-with-policy mt-32">
+                <label class="checkbox-container">
+                    <input name="myCheckbox" type="checkbox" id="checkbox_id">
+                    <span class="checkmark"></span>
+                </label>
+                <span>I've read the <div class="privacy-link"><a>privacy policy</a></div> and agree to the processing of
+                    my data as outlined.</span>
             </div>
-
+            <div class="warning-field">
+                <span id="warning-text-checkbox" class="warning-text d-none">
+                    Please accept the privacy policy
+                </span>
+            </div>
         </form>
     </div>
 
