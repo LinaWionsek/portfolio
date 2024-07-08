@@ -13,7 +13,7 @@ export class ProjectsService {
       name: 'Join',
       tech_stack: 'Angular | TypeScript | HTML | CSS | Firebase ',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
-      demo: 'https://github.com',
+      demo: 'https://join.lina-wionsek.de/',
       github: 'https://github.com',
     },
     {
@@ -21,7 +21,7 @@ export class ProjectsService {
       name: 'Pollo Loco',
       tech_stack: 'JavaScript | HTML | CSS',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      demo: 'https://github.com',
+      demo: 'http://polloloco.lina-wionsek.de/',
       github: 'https://github.com',
     },
     {
@@ -29,7 +29,7 @@ export class ProjectsService {
       name: 'Pokedex',
       tech_stack: 'JavaScript | HTML | CSS',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      demo: 'https://github.com',
+      demo: 'http://pokedex.lina-wionsek.de/',
       github: 'https://github.com',
     },
   ]
