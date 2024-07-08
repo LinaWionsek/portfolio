@@ -25,7 +25,7 @@ export class ProjectsService {
       github: 'https://github.com',
     },
     {
-      img: 'join.png',
+      img: 'pokedex.png',
       name: 'Pokedex',
       tech_stack: 'JavaScript | HTML | CSS',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',

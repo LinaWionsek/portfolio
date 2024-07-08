@@ -8,7 +8,7 @@
         <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" class="project-container">
 
             <a [href]="singleproject.demo" target="_blank" class="project-demo">
-                <img src="/img/{{singleproject.img}}">
+                <img src="/img/{{singleproject.img}}" class="project-img">
             </a>
 
             <div [ngClass]="{'project-info-reverse': index === 1}" class="project-info">
