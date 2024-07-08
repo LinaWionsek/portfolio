@@ -4,12 +4,18 @@
   // font-family: 'Economica';
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ff5959 #FFF
 }
+
+body {
+  overflow-x: hidden;
+}
+
 
 $red: #ff5959;
 $balooFont: "Baloo 2", cursive;
 $montserratFont: "Montserrat", sans-serif;
-
 
 /* baloo-2-regular - latin */
 @font-face {
