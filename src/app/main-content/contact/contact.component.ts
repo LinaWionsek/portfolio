@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  onChange(event: Event): void {
+  console.log((event.target as HTMLInputElement).checked);
+   }
 }
