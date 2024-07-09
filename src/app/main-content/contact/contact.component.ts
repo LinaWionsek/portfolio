@@ -13,9 +13,9 @@ export class ContactComponent {
 
   http = inject(HttpClient);
 
-  onChange(event: Event): void {
-    console.log((event.target as HTMLInputElement).checked);
-  }
+  // onChange(event: Event): void {
+  //   console.log((event.target as HTMLInputElement).checked);
+  // }
 
   contactData = {
     name: '',
@@ -23,7 +23,7 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://lina-wionsek.de/sendMail.php',
@@ -37,12 +37,15 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    // debugger;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      debugger;
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            
+
             ngForm.resetForm();
+            console.log("response")
           },
           error: (error) => {
             console.error(error);
@@ -50,7 +53,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      
       ngForm.resetForm();
     }
   }
