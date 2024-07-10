@@ -13,53 +13,75 @@
         </div>
 
         <!-- <div class="container"> -->
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div>
 
                 <label for="name"></label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
-                
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="Your name.." required>
+
                 @if (!name.valid && name.touched && !name.disabled){
-                    <span class="warning-text">Please enter a name</span>
+                <span class="warning-text">Your name is required</span>
                 }
 
                 <label for="email"></label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your mail.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Your mail.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
                 @if (!email.valid && email.touched && !email.disabled){
-                    <span class="warning-text">Please enter a email</span>
+                <span class="warning-text">Your email is required</span>
                 }
 
                 <label for="message"></label>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
+                    placeholder="Write something.." style="height:200px" required></textarea>
 
                 @if (!message.valid && message.touched && !message.disabled){
-                    <span class="warning-text">Please enter a message</span>
+                <span class="warning-text">Please enter a message</span>
                 }
 
-                <input type="submit" class="submit-button" value="Say hello :)">
-
-
-
-<!-- 
                 <div class="checkbox-with-policy mt-16">
-                    <label class="checkbox-container">
-                        <input name="myCheckbox" type="checkbox" id="checkbox_id" (change)="onChange($event)">
-                      
-                    </label>
+                    <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"
+                        id="checkbox_id" (change)="onChange($event)" required>
+
                     <span>I've read the <div class="privacy-link"><a>privacy policy</a></div> and agree to the
                         processing of
                         my data as outlined.</span>
                 </div>
 
-                <div class="warning-field">
-                    <span id="warning-text-checkbox" class="warning-text d-none">
-                        Please accept the privacy policy
-                    </span>
-                </div>
-           
-                <button class="mt-32">Say hello ;)</button> -->
-            </form>
-        <!-- </div> -->
+                @if (!checkbox.valid && checkbox.touched && !checkbox.disabled){
+                <span class="warning-text"> Please accept the privacy policy</span>
+                }
+
+
+
+            </div>
+
+
+            <input type="submit" class="submit-button" value="Say hello :)">
+
+
+
+
+
+            <!--             
+                <div class="checkbox-with-policy mt-16">
+                    <label class="checkbox-container">
+                        <input name="myCheckbox" type="checkbox" id="checkbox_id" (change)="onChange($event)" required>
+                      
+                    </label>
+                    <span>I've read the <div class="privacy-link"><a>privacy policy</a></div> and agree to the
+                        processing of
+                        my data as outlined.</span>
+                </div> -->
+
+
+
+
+
+
+        </form>
+
 
 
     </div>

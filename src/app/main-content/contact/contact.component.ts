@@ -13,17 +13,19 @@ export class ContactComponent {
 
   http = inject(HttpClient);
 
-  // onChange(event: Event): void {
-  //   console.log((event.target as HTMLInputElement).checked);
-  // }
+  onChange(event: Event): void {
+    console.log((event.target as HTMLInputElement).checked);
+  }
 
   contactData = {
     name: '',
     email: '',
     message: '',
+    checked: false
   };
 
   mailTest = false;
+
 
   post = {
     endPoint: 'https://lina-wionsek.de/sendMail.php',
