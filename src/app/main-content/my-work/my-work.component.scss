@@ -28,40 +28,49 @@ span {
   position: absolute;
   height: 100%;
   z-index: -1;
+  div {
+    height: 100%;
+    position: relative;
+  }
+}
+
+.ellipse-4,
+.ellipse-5,
+.ellipse-6,
+.ellipse-7,
+.ellipse-8,
+.ellipse-9 {
+  position: absolute;
 }
 
 .ellipse-4 {
-  position: relative;
-  left: 37%;
-  bottom: 58%;
+  left: 390px;
+  top: 300px;
 }
 
 .ellipse-5 {
-  position: relative;
-  bottom: 28%;
-  left: 75%;
+  left: 390px;
+  top: 300px;
 }
 
 .ellipse-6 {
-  position: relative;
-  top: 34%;
-  right: 31%;
+  left: 390px;
+  top: 300px;
 }
 
 .ellipse-7 {
-  position: relative;
-  top: 96%;
-  left: 29.2%;
+  left: 390px;
+  top: 300px;
 }
 
 .ellipse-8 {
-  position: relative;
-  top: 79%;
-  right: 78%;
+  left: 390px;
+  top: 300px;
 }
 
 .ellipse-9 {
-  position: relative;
-  top: 143%;
-  right: 77%;
+  left: 390px;
+  top: 300px;
 }
+
+
