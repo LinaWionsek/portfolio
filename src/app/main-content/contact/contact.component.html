@@ -15,30 +15,37 @@
         <!-- <div class="container"> -->
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div>
+                <div class="form-fields">
+                    <div>
+                        <label for="name"></label>
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                            placeholder="Your name.." required>
 
-                <label for="name"></label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="Your name.." required>
+                        @if (!name.valid && name.touched && !name.disabled){
+                        <span class="warning-text">Your name is required</span>
+                        }
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                            placeholder="Your mail.." required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-                @if (!name.valid && name.touched && !name.disabled){
-                <span class="warning-text">Your name is required</span>
-                }
+                        @if (!email.valid && email.touched && !email.disabled){
+                        <span class="warning-text">Your email is required</span>
+                        }
+                    </div>
 
-                <label for="email"></label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your mail.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <div>
+                        <label for="message"></label>
+                        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                            name="message" placeholder="Write something.." style="height:200px" required></textarea>
 
-                @if (!email.valid && email.touched && !email.disabled){
-                <span class="warning-text">Your email is required</span>
-                }
-
-                <label for="message"></label>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="Write something.." style="height:200px" required></textarea>
-
-                @if (!message.valid && message.touched && !message.disabled){
-                <span class="warning-text">Please enter a message</span>
-                }
+                        @if (!message.valid && message.touched && !message.disabled){
+                        <span class="warning-text">Please enter a message</span>
+                        }
+                    </div>
+                </div>
 
                 <div class="checkbox-with-policy mt-16">
                     <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"

@@ -44,6 +44,7 @@ input[type="text"] {
   padding: 15px 25px;
   font-family: $montserratFont;
   font-size: 16px;
+  margin-bottom: 4px;
 }
 
 input[type="email"] {
@@ -55,6 +56,7 @@ input[type="email"] {
   padding: 15px 25px;
   font-family: $montserratFont;
   font-size: 16px;
+  margin-bottom: 4px;
 }
 
 textarea {
@@ -72,6 +74,13 @@ textarea {
   min-height: 202px;
   max-width: 100%;
   min-width: 617px;
+  margin-bottom: 4px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .submit-button {
@@ -84,6 +93,7 @@ textarea {
   border: 2px solid $red;
   border-radius: 10px;
   font-family: $montserratFont;
+  margin-top: 30px;
 }
 
 .d-none {
@@ -125,6 +135,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 4px;
   span {
     font-size: 14px;
     font-family: $montserratFont;
@@ -174,7 +185,7 @@ input[type="checkbox"] {
   width: 18px;
   height: 18px;
   border: 2px solid $red;
-  border-radius:2px;
+  border-radius: 2px;
   // transform: translateY(-0.075em);
 
   display: grid;
@@ -201,3 +212,10 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
+
+.warning-text {
+  color: $red;
+  font-size: 14px;
+  font-family: $montserratFont;
+
+}
