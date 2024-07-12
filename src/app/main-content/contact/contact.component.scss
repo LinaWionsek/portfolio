@@ -217,5 +217,10 @@ input[type="checkbox"]:checked::before {
   color: $red;
   font-size: 14px;
   font-family: $montserratFont;
+}
 
+.warning {
+  background-image: url("../../../../public/img/error.png");
+  background-repeat: no-repeat;
+  background-position: 565px center;
 }

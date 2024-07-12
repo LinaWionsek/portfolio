@@ -18,7 +18,7 @@
                 <div class="form-fields">
                     <div>
                         <label for="name"></label>
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning" name="name"
                             placeholder="Your name.." required>
 
                         @if (!name.valid && name.touched && !name.disabled){
