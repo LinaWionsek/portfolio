@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -5,7 +6,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -21,7 +22,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    checked: false
+    checked:false
   };
 
   mailTest = false;
@@ -39,7 +40,6 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    // debugger;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       debugger;
       this.http.post(this.post.endPoint, this.post.body(this.contactData))

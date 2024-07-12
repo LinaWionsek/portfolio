@@ -18,12 +18,13 @@
                 <div class="form-fields">
                     <div>
                         <label for="name"></label>
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning" name="name"
-                            placeholder="Your name.." required>
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning"
+                            name="name" placeholder="Your name.." required>
 
-                        @if (!name.valid && name.touched && !name.disabled){
+                        @if (!name.valid && name.touched){
                         <span class="warning-text">Your name is required</span>
                         }
+
                     </div>
                     <div>
                         <label for="email"></label>
@@ -31,9 +32,10 @@
                             placeholder="Your mail.." required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-                        @if (!email.valid && email.touched && !email.disabled){
+                        @if (!email.valid && email.touched){
                         <span class="warning-text">Your email is required</span>
                         }
+
                     </div>
 
                     <div>
@@ -41,9 +43,10 @@
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
                             name="message" placeholder="Write something.." style="height:200px" required></textarea>
 
-                        @if (!message.valid && message.touched && !message.disabled){
+                        @if (!message.valid && message.touched){
                         <span class="warning-text">Please enter a message</span>
                         }
+
                     </div>
                 </div>
 
@@ -56,7 +59,7 @@
                         my data as outlined.</span>
                 </div>
 
-                @if (!checkbox.valid && checkbox.touched && !checkbox.disabled){
+                @if (!checkbox.valid && checkbox.touched){
                 <span class="warning-text"> Please accept the privacy policy</span>
                 }
 
@@ -65,7 +68,8 @@
             </div>
 
 
-            <input type="submit" class="submit-button" value="Say hello :)" [disabled]="!contactForm.valid">
+            <input [ngClass]="{'btn-disabled': !contactForm.valid, 'btn-success': contactForm.valid}" type="submit"
+                class="submit-button" value="Say hello :)" [disabled]="!contactForm.valid">
 
 
 

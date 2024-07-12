@@ -83,19 +83,6 @@ textarea {
   gap: 28px;
 }
 
-.submit-button {
-  width: fit-content;
-  height: 58px;
-  font-size: 23px;
-  color: $red;
-  background-color: white;
-  padding: 15px 30px;
-  border: 2px solid $red;
-  border-radius: 10px;
-  font-family: $montserratFont;
-  margin-top: 30px;
-}
-
 .d-none {
   display: none;
 }
@@ -223,4 +210,29 @@ input[type="checkbox"]:checked::before {
   background-image: url("../../../../public/img/error.png");
   background-repeat: no-repeat;
   background-position: 565px center;
+}
+
+.submit-button {
+  width: fit-content;
+  height: 58px;
+  font-size: 23px;
+  background-color: white;
+  padding: 15px 30px;
+  border: 2px solid $red;
+  border-radius: 10px;
+  font-family: $montserratFont;
+  margin-top: 30px;
+}
+
+.btn-disabled {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+.btn-success {
+  color: $red;
+  border-color: $red;
+  &:hover {
+    cursor: pointer;
+  }
 }
