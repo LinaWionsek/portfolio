@@ -19,6 +19,7 @@
                     <div>
                         <label for="name"></label>
                         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning"
+                            [ngClass]="{'success-icon': name.valid  , 'warning-icon': !name.valid && name.touched}"
                             name="name" placeholder="Your name.." required>
 
                         @if (!name.valid && name.touched){
@@ -28,8 +29,9 @@
                     </div>
                     <div>
                         <label for="email"></label>
-                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                            placeholder="Your mail.." required
+                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
+                            [ngClass]="{'success-icon': email.valid  , 'warning-icon': !email.valid && email.touched}"
+                            name="email" placeholder="Your mail.." required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
                         @if (!email.valid && email.touched){
@@ -41,6 +43,7 @@
                     <div>
                         <label for="message"></label>
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                            [ngClass]="{'success-icon-message': message.valid  , 'warning-icon-message': !message.valid && message.touched}"
                             name="message" placeholder="Write something.." style="height:200px" required></textarea>
 
                         @if (!message.valid && message.touched){
@@ -51,9 +54,10 @@
                 </div>
 
                 <div class="checkbox-with-policy mt-16">
-                    <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"
-                        id="checkbox_id" (change)="onChange($event)" required>
-
+                    <div class="checkbox-container">
+                        <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"
+                            id="checkbox_id" (change)="onChange($event)" required>
+                    </div>
                     <span>I've read the <div class="privacy-link"><a>privacy policy</a></div> and agree to the
                         processing of
                         my data as outlined.</span>
