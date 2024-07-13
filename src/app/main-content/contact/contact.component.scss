@@ -206,11 +206,31 @@ input[type="checkbox"]:checked::before {
   font-family: $montserratFont;
 }
 
-.warning {
+.warning-icon {
   background-image: url("../../../../public/img/error.png");
   background-repeat: no-repeat;
   background-position: 565px center;
 }
+
+.warning-icon-message {
+  background-image: url("../../../../public/img/error.png");
+  background-repeat: no-repeat;
+  background-position: 565px 15px;
+}
+
+.success-icon {
+  background-image: url("../../../../public/img/done.png") !important;
+  background-repeat: no-repeat;
+  background-position: 565px center;
+}
+
+.success-icon-message {
+  background-image: url("../../../../public/img/done.png");
+  background-repeat: no-repeat;
+  background-position: 565px 15px;
+}
+
+/* [ngClass]="{'success-icon-message': message.valid  , 'warning-icon-message': !message.valid &&message.touched}" */
 
 .submit-button {
   width: fit-content;
