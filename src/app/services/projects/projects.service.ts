@@ -17,7 +17,7 @@ export class ProjectsService {
       github: 'https://github.com',
     },
     {
-      img: 'join.png',
+      img: 'polloloco.png',
       name: 'Pollo Loco',
       tech_stack: 'JavaScript | HTML | CSS',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
