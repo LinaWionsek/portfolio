@@ -147,7 +147,6 @@ textarea {
       font-weight: bold;
     }
   }
-
 }
 
 .consent-statement {
@@ -278,5 +277,18 @@ input[type="checkbox"]:checked::before {
   border-color: $red;
   &:hover {
     cursor: pointer;
+  }
+}
+
+.upbutton {
+  background: url("../../../../public/img/upbutton_filled.png") no-repeat;
+  position: absolute;
+  height: 40px;
+  width: 40px !important;
+  margin-top: 465px;
+  margin-left: 1px;
+  &:hover {
+    cursor: pointer;
+    background: url("../../../../public/img/upbutton_unfilled.png") no-repeat;
   }
 }
