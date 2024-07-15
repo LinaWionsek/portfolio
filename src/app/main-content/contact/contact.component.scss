@@ -37,7 +37,7 @@ form {
 
 input[type="text"],
 input[type="email"],
-textarea{
+textarea {
   &:focus,
   &:hover {
     border-width: 2px;
@@ -66,7 +66,6 @@ input[type="email"] {
   font-family: $montserratFont;
   font-size: 16px;
   margin-bottom: 4px;
-
 }
 
 textarea {
@@ -133,11 +132,28 @@ textarea {
   align-items: center;
   gap: 8px;
   margin-bottom: 4px;
-  span {
-    font-size: 14px;
-    font-family: $montserratFont;
-    display: flex;
+
+  &:hover {
+    cursor: context-menu;
+    .checkbox-container {
+      background-color: #ffd6d6;
+      border-radius: 36px;
+      cursor: pointer;
+    }
+
+    .privacy-link {
+      color: $red;
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
+
+}
+
+.consent-statement {
+  font-size: 14px;
+  font-family: $montserratFont;
+  display: flex;
 }
 
 .privacy-link {
