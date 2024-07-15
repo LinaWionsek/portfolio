@@ -18,8 +18,13 @@ nav {
     display: flex;
     gap: 36px;
     >a {
+        width: 120px;
         text-decoration: none;
         color: $red;
+        text-align: center;
+        &:hover {
+            font-weight: 700;
+        }
     }
 }
 
@@ -35,12 +40,15 @@ nav {
     width: fit-content;
     font-family: "Montserrat", sans-serif;
     position: relative;
-    left: 415px;
+    left: 470px;
     bottom: 23px;
     
     a {
         color: black;
         text-decoration: none;
+        &:hover {
+            font-weight: 600;
+        }
     }
     
 }

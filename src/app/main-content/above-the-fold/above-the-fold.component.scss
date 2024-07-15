@@ -95,5 +95,9 @@ section {
   height: fit-content;
   img {
     width: 40px;
+    &:hover {
+      transition: ease-in-out 0.2s;
+      transform: translateX(-10px);
+    }
   }
 }
