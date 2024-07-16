@@ -6,7 +6,7 @@ section {
   padding: 100px;
   font-family: $montserratFont;
   color: white;
-  background: linear-gradient(to right, #FF5959, #DE0000  );
+  background: linear-gradient(to right, $red, #DE0000  );
 }
 
 span {

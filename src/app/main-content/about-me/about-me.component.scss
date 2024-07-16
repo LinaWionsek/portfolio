@@ -70,15 +70,30 @@ section {
   font-family: $montserratFont;
 }
 
-.button:hover {
-  background-position: left center;
-  color: white;
-  transition: background-position 2000ms ease-in-out;
-  background-image: linear-gradient(45deg, white 25%, #DE0000 37.5%, #FF5959, #DE0000  62.5%);
-  background-position: right center;
-  background-size: 400% auto;
- 
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: 254px;
+  height: 58px;
+  font-size: 23px;
+  background-color: white;
+  color: $red;
+  padding: 15px 30px;
+  border: 2px solid $red;
+  border-radius: 10px;
+  font-family: $montserratFont;
+
+  background: {
+    image: linear-gradient(45deg, $red 50%, $darkred 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 200ms ease-in-out; 
+
+  &:hover {
+    background-position: 0;
+    color: white;
+    cursor: pointer;
+  }
 }
-// #FF5959
-// #DE0000
-// white
