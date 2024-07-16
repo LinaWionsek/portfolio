@@ -82,5 +82,11 @@
 .project-img {
   height: 393px;
   width: 620px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateY(-50px);
+    transition: all 150ms ease-in-out;
+  }
 }
 
