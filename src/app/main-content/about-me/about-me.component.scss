@@ -70,7 +70,6 @@ section {
   font-family: $montserratFont;
 }
 
-
 .btn {
   display: flex;
   align-items: center;
@@ -89,9 +88,11 @@ section {
     position: 100%;
     size: 400%;
   }
-  transition: background 300ms ease-in-out; 
 
   &:hover {
+    border: none;
+    transition: background 300ms ease-in-out;
+    transform: scale(1.08);
     background-position: 0;
     color: white;
     cursor: pointer;
