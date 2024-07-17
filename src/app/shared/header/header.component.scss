@@ -54,3 +54,13 @@ nav {
     }
     
 }
+
+@media (max-width: 768px) {
+    nav {
+        height: 120px;
+        margin: 0px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

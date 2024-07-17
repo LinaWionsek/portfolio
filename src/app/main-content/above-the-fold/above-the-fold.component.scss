@@ -101,3 +101,51 @@ section {
     }
   }
 }
+
+@media (max-width: 768px) {
+  section {
+    justify-content: unset;
+    h1 {
+      color: white;
+    }
+  }
+
+  .right {
+    margin-left: 25px;
+  }
+
+  .img-container {
+    .ellipse1 {
+      position: absolute;
+    }
+    .profile-picture {
+      position: absolute;
+      bottom: 0;
+      height: 600px;
+      left: 120px;
+    }
+  }
+
+  .right {
+    z-index: 1;
+  }
+
+  .main-headline {
+    color: white;
+  }
+
+  .frontend {
+    line-height: 133px;
+    font-size: 108px;
+  }
+  
+  .developer {
+    line-height: 122px;
+    font-size: 98px;
+    margin-top: -40px;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
