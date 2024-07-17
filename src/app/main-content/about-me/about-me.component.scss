@@ -98,3 +98,9 @@ section {
     cursor: pointer;
   }
 }
+
+@media (max-width: 768px) {
+  .work-together-container {
+    flex-direction: column;
+  }
+}

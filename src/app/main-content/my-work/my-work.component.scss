@@ -72,3 +72,16 @@ span {
   left: 30px;
   top: 1724px;
 }
+
+@media (max-width: 768px) {
+  .ellipse-5 {
+    left: 0;
+  }
+  .ellipse-8 {
+    top: 2000px;
+  }
+  .ellipse-9 {
+    left: -80px;
+    top: 2255px;
+  }
+}

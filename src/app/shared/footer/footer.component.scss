@@ -6,7 +6,7 @@ section {
   padding: 100px;
   font-family: $montserratFont;
   color: white;
-  background: linear-gradient(to right, $red, #DE0000  );
+  background: linear-gradient(to right, $red, #de0000);
 }
 
 span {
@@ -14,21 +14,18 @@ span {
   height: 30px;
 }
 
-
-
 .main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .logo-container {
   height: 30px;
   width: 242px;
 }
-
 
 .placeholder {
   height: 30px;
@@ -91,7 +88,7 @@ span {
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   transform: scaleX(0);
@@ -108,3 +105,15 @@ span {
   transform: scaleX(1);
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}

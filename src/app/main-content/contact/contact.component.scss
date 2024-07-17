@@ -303,3 +303,15 @@ input[type="checkbox"]:checked::before {
     background: url("../../../../public/img/upbutton_unfilled.png") no-repeat;
   }
 }
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .upbutton {
+    margin-top: 703px;
+    margin-left: 0px;
+  }
+}

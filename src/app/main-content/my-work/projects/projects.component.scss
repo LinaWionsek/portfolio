@@ -63,7 +63,6 @@
     position: 100%;
     size: 400%;
   }
- 
 
   &:hover {
     border: none;
@@ -92,5 +91,20 @@
     cursor: pointer;
     transform: scale(1.1) translateY(-50px);
     transition: all 150ms ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  // .content {
+  //   align-items: center;
+  // }
+  .project-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .project-info {
+    align-items: center;
+    width: 380px;
   }
 }
