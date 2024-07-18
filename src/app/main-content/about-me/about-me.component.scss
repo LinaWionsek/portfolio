@@ -106,7 +106,26 @@ section {
 }
 
 @media (max-width: 900px) {
+  section {
+    margin: 0px 25px 50px 25px;
+  }
+
   .work-together-container {
     flex-direction: column;
+  }
+  .headline {
+    font-size: 64px;
+  }
+
+  .mt-60neg {
+    margin-top: -20px !important;
+  }
+  .description-container {
+    width: auto;
+  }
+  .btn {
+    width: 242px;
+    height: 54px;
+    padding: 13px 24px;
   }
 }
