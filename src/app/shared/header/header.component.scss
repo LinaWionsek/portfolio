@@ -230,7 +230,27 @@ nav {
 }
 
 // Media
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  nav {
+    margin: 0px 50px;
+  }
+  .nav-links{
+    gap: 18px;
+  }
+  .language {
+    left: 410px;
+  }
+}
+
+@media (max-width: 1000px) {
+    .nav-links{
+        gap: 8px;
+      }
+      .language {
+        left: 390px;
+      }
+}
+@media (max-width: 900px) {
   #container {
     display: block;
   }

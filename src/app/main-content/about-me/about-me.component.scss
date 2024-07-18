@@ -99,7 +99,13 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  section {
+    margin: 0px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 900px) {
   .work-together-container {
     flex-direction: column;
   }

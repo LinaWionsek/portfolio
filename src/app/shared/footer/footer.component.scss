@@ -106,7 +106,13 @@ span {
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  section {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 900px) {
   .main-content {
     flex-direction: column;
     gap: 30px;
