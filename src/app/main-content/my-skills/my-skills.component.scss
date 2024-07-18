@@ -63,13 +63,31 @@ h1 {
   }
   .skills-container {
     height: auto;
+    width: 100%;
+    gap: 78px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
   }
   .single-skill {
+    height: auto;
     img {
       height: 60px;
     }
     .skill-name {
       font-size: 14px;
     }
+  }
+}
+@media (max-width: 500px) {
+ 
+  .skills-container {
+    gap: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .skills-container {
+    gap: 24px;
   }
 }
