@@ -59,7 +59,7 @@ span {
 }
 
 .ellipse-7 {
-  left: 860px;
+  left: 760px;
   top: 860px;
 }
 
@@ -73,6 +73,73 @@ span {
   top: 1724px;
 }
 
+@media (max-width: 1366px) {
+  // .ellipse-5 {
+  //   left: 990px;
+  // }
+  // .ellipse-7 {
+  //   left: 776px;
+  // }
+}
+
+@media (max-width: 1280px) {
+  .ellipse-4 {
+    top: -42px;
+  }
+  .ellipse-5 {
+    left: 860px;
+  }
+  .ellipse-6 {
+    left: 0;
+  }
+  .ellipse-7 {
+    left: 588px; 
+  }
+  .ellipse-9 {
+    top: 1664px;
+  }
+}
+
+// @media (max-width: 1250px) {
+//   .ellipse-7 {
+//     left: 560px;
+//   }
+// }
+// @media (max-width: 1150px) {
+//   .ellipse-5 {
+//     left: 640px;
+//   }
+//   .ellipse-7 {
+//     left: 457px;
+//   }
+// }
+
+// @media (max-width: 1160px) {
+//   .ellipse-5 {
+//     left: 540px;
+//   }
+//   .ellipse-7 {
+//     left: 357px;
+//   }
+// }
+
+// @media (max-width: 950px) {
+//   .ellipse-5 {
+//     left: 540px;
+//   }
+//   .ellipse-7 {
+//     left: 251px;
+//   }
+// }
+
+// @media (max-width: 850px) {
+//   .ellipse-5 {
+//     left: 540px;
+//   }
+//   .ellipse-7 {
+//     left: 144px;
+//   }
+// }
 @media (max-width: 768px) {
   .ellipse-5 {
     left: 0;
@@ -83,5 +150,14 @@ span {
   .ellipse-9 {
     left: -80px;
     top: 2255px;
+  }
+
+  .ellipse-4,
+  .ellipse-5,
+  .ellipse-6,
+  .ellipse-7,
+  .ellipse-8,
+  .ellipse-9 {
+    display: none;
   }
 }
