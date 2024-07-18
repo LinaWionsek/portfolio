@@ -35,7 +35,7 @@ h1 {
   height: 150px;
   &:hover {
     font-weight: bold;
-    >img {
+    > img {
       transform: translateY(-10px);
     }
   }
@@ -50,5 +50,26 @@ h1 {
 @media (max-width: 1280px) {
   section {
     padding: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    gap: 0;
+    padding: 50px 25px;
+  }
+  h1 {
+    font-size: 64px;
+  }
+  .skills-container {
+    height: auto;
+  }
+  .single-skill {
+    img {
+      height: 60px;
+    }
+    .skill-name {
+      font-size: 14px;
+    }
   }
 }
