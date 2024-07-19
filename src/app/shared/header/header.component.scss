@@ -266,3 +266,14 @@ nav {
     display: none;
   }
 }
+
+@media (max-width: 350px) {
+  nav {
+    height: 120px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

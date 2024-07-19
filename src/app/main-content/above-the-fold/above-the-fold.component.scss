@@ -278,8 +278,8 @@ section {
 @media (max-width: 610px) {
   .img-container {
     .ellipse1 {
-      height: 700px;
-      width: 500px;
+      // height: 700px;
+      // width: 500px;
     }
   }
 }
@@ -287,8 +287,8 @@ section {
 @media (max-width: 510px) {
   .img-container {
     .ellipse1 {
-      height: 600px;
-      width: 400px;
+      // height: 600px;
+      // width: 400px;
     }
   }
 }
@@ -301,10 +301,9 @@ section {
   }
   .img-container {
     .ellipse1 {
-      // height: 600px;
-      // width: 400px;
-      height: 460px;
-      width: 350px;
+
+      height: 610px;
+      width: 350px
     }
   }
 
@@ -326,7 +325,10 @@ section {
       font-size: 28px;
     }
   }
-
+  .right {
+    margin-left: 10px;
+    padding-top: 0;
+  }
   .frontend {
     font-size: 54px;
   }
