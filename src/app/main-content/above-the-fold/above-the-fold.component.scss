@@ -27,6 +27,9 @@ section {
     height: 800px;
     width: 600px;
   }
+  .ellipse-mobile {
+    display: none;
+  }
   .profile-picture {
     position: absolute;
     bottom: 0;
@@ -207,10 +210,10 @@ section {
 
 @media (max-width: 920px) {
   .img-container {
-        .ellipse1 {
-        margin-left: -30px
-        }
-      }
+    .ellipse1 {
+      margin-left: -30px;
+    }
+  }
 }
 // @media (max-width: 850px) {
 //   .img-container {
@@ -232,11 +235,11 @@ section {
 //   }
 // }
 @media (max-width: 900px) {
-  // .ellipse-mobile {
-  //   position: absolute;
-  //   height: 80%;
-  //   margin-top: -120px;
-  // }
+  .ellipse-mobile {
+    position: absolute;
+    margin-top: -120px;
+    scale: 1.9;
+  }
 
   section {
     justify-content: unset;
@@ -253,9 +256,16 @@ section {
 
   .img-container {
     .ellipse1 {
+      display: none;
       height: 800px;
       width: 600px;
       position: absolute;
+    }
+    .ellipse-mobile {
+      display: block;
+      position: absolute;
+      margin-top: -120px;
+      scale: 1.9;
     }
     .profile-picture {
       position: absolute;
@@ -291,32 +301,36 @@ section {
 
 @media (max-width: 610px) {
   .img-container {
-    .ellipse1 {
-      // height: 700px;
-      // width: 500px;
+    .ellipse-mobile {
+      scale: 1.5;
     }
   }
 }
 
 @media (max-width: 510px) {
   .img-container {
-    .ellipse1 {
-      // height: 600px;
-      // width: 400px;
+    .ellipse-mobile {
+      scale: 1.3;
     }
   }
 }
-
-@media (max-width: 410px) {
+@media (max-width: 450px) {
+  .img-container {
+    .ellipse-mobile {
+      scale: 1.1;
+    }
+  }
+}
+@media (max-width: 420px) {
   section {
     h1 {
       font-size: 32px;
     }
   }
+
   .img-container {
-    .ellipse1 {
-      height: 610px;
-      width: 350px;
+    .ellipse-mobile {
+      scale: 1;
     }
   }
 
@@ -331,11 +345,36 @@ section {
     margin-top: -20px;
   }
 }
+@media (max-width: 400px) {
+  .img-container {
+    .ellipse-mobile {
+      scale: 0.95;
+      margin-left: -10px;
+      margin-top: -134px;
+    }
+  }
+}
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
+  .img-container {
+    .ellipse-mobile {
+      scale: 0.9;
+      margin-left: -20px;
+      margin-top: -150px;
+    }
+  }
+}
+@media (max-width: 360px) {
   section {
     h1 {
       font-size: 28px;
+    }
+  }
+  .img-container {
+    .ellipse-mobile {
+      scale: 0.82;
+      margin-left: -35px;
+      margin-top: -173px;
     }
   }
   .right {
