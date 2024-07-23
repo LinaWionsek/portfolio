@@ -17,39 +17,15 @@
                 <a href="#language">EN</a>
             </div>
         </div>
+       
+      
 
-        <div id='container'>
-            <div id="menuToggle">
-                <!-- <img src="/img/burgertest.png" alt=""> -->
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="#">
-                        <li>Shop</li>
-                    </a>
-                    <a href="#">
-                        <li>Trade-in</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                    <a href="#">
-                        <li>About</li>
-                    </a>
-                    <a href="#">
-                        <li>Log In / Sign Up</li>
-                    </a>
-                    <a href="#">
-                        <li>Vier Cart</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
+    <img class="burger-menu" [src]="imgSrc" (click)="changeShowStatus()" (mouseover)="imgSrc = '/img/burger_hover.png'" (mouseout)="imgSrc = '/img/burger.png'" alt="">
+        
+          <div class="dialog" [ngClass]="{'show': show, 'hide': !show}">
+            <img class="burger-menu" [src]="imgSrc" (click)="changeShowStatus()" (mouseover)="imgSrc = '/img/burger_hover.png'" (mouseout)="imgSrc = '/img/burger.png'" alt="">
+            MENU</div>
+       
 
     </nav>
 </section>

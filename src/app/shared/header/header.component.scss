@@ -140,93 +140,22 @@ nav {
 //   left: 40px;
 // }
 
-// Hamburger Menu2
-#menuToggle {
-  z-index: 6;
-  -webkit-user-select: none;
-  user-select: none;
-
-  a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-  }
-
-  span {
-    &:first-child {
-      transform-origin: 0% 0%;
-    }
-
-    &:nth-last-child(2) {
-      transform-origin: 0% 100%;
-    }
-  }
-
-  input {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    width: 40px;
-    z-index: 2;
-    -webkit-touch-callout: none;
-  }
-
-  span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #9c9c9c;
-    border-radius: 3px;
-    z-index: 1;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transform-origin: 4px 0px;
-  }
-
-  input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-
-    &:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-
-    &:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-  }
-
-  input:checked ~ ul {
-    left: 40px;
-  }
+.dialog {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
 }
-
-#menu {
-  position: absolute;
-  left: -300px;
-  top: 80px;
-  width: 200px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: pink;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transition: left 0.5s;
-  z-index: 5;
-
-  li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
+.show {
+  display: unset;
 }
-
-#container {
+.hide {
   display: none;
+}
+.burger-menu {
+  z-index: 5;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // Media
@@ -234,7 +163,7 @@ nav {
   nav {
     margin: 0px 50px;
   }
-  .nav-links{
+  .nav-links {
     gap: 18px;
   }
   .language {
@@ -243,12 +172,12 @@ nav {
 }
 
 @media (max-width: 1000px) {
-    .nav-links{
-        gap: 8px;
-      }
-      .language {
-        left: 390px;
-      }
+  .nav-links {
+    gap: 8px;
+  }
+  .language {
+    left: 390px;
+  }
 }
 @media (max-width: 900px) {
   #container {
@@ -275,5 +204,4 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
-
 }
