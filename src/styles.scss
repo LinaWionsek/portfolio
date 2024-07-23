@@ -5,19 +5,23 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #ff5959 #FFF
+  scrollbar-color: #ff5959 #fff;
 }
 
 body {
   // overflow-x: hidden;
 }
 
+@media (max-width: 900px) {
+  * {
+    scrollbar-width: none;
+  }
+}
 
 $red: #ff5959;
-$darkred: #DE0000;
+$darkred: #de0000;
 $balooFont: "Baloo 2", cursive;
 $montserratFont: "Montserrat", sans-serif;
-
 
 @mixin dFlex($jc: center, $ai: center, $g: 0px) {
   display: flex;
