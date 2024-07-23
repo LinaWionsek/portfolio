@@ -54,92 +54,6 @@ nav {
   }
 }
 
-// Hamburger Menu1
-
-// #menuToggle {
-
-//   z-index: 1;
-//   -webkit-user-select: none;
-//   user-select: none;
-// }
-// #menuToggle a
-// {
-//   text-decoration: none;
-//   color: #232323;
-
-//   transition: color 0.3s ease;
-// }
-
-// #menuToggle span:first-child {
-//   transform-origin: 0% 0%;
-// }
-
-// #menuToggle span:nth-last-child(2) {
-//   transform-origin: 0% 100%;
-// }
-
-// #menuToggle input {
-//   position: absolute;
-//   cursor: pointer;
-//   opacity: 0;
-//   width: 40px;
-
-//   z-index: 2; /* in order to place the checkbox over the hamburguer */
-//   -webkit-touch-callout: none;
-// }
-
-// #menuToggle span {
-//   display: block; /* to ensure that each span element occupies its own line. */
-//   width: 33px;
-//   height: 4px;
-//   margin-bottom: 5px; /* create some spacing between the span elements. */
-//   position: relative; /* allow for positioning changes in relation to the parent div.*/
-//   background: #FF5959;
-//   border-radius: 3px;
-//   z-index: 1; /* ensure that the span element is under the checkbox */
-//   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-//     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-//   transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
-// }
-
-// #menuToggle input:checked ~ span {
-//   opacity: 1;
-//   transform: rotate(45deg) translate(-2px, -1px);
-//   background: #232323;
-// }
-
-// #menuToggle input:checked ~ span:nth-last-child(3) {
-//   opacity: 0;
-//   transform: rotate(0deg) scale(0.2, 0.2);
-// }
-
-// #menuToggle input:checked ~ span:nth-last-child(2) {
-//   transform: rotate(-45deg) translate(0, -1px);
-// }
-// #menu {
-//   position: absolute;
-//   left: -300px;
-//   top: 80px;
-//   width: 200px;
-//   margin: -100px 0 0 -50px;
-//   padding: 50px;
-//   padding-top: 125px;
-//   background: pink;
-//   list-style-type: none;
-//   -webkit-font-smoothing: antialiased;
-
-//   transition: left 0.5s;
-
-// }
-
-// #menu li {
-//   padding: 10px 0;
-//   font-size: 22px;
-// }
-// #menuToggle input:checked ~ ul {
-//   left: 40px;
-// }
-
 .dialog {
   position: fixed;
   top: 0;
@@ -153,8 +67,9 @@ nav {
   align-items: center;
   z-index: 5;
   padding: 25px;
-  gap: 200px;
+  gap: 150px;
 }
+
 .dialog-header {
   width: 100%;
   display: flex;
@@ -176,22 +91,7 @@ nav {
       font-weight: 700;
     }
   }
-
 }
-// position: fixed;
-// justify-self: center;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// gap: 0px;
-// top: 97.5px;
-// left: 0;
-// right: 0;
-// max-width: 1550px;
-// width: 100%;
-// height: calc(100% - 112.5px);
-// background: #141d2fef;
-// z-index: 5;
 
 .show {
   display: flex;
@@ -200,9 +100,18 @@ nav {
   display: none;
 }
 .burger-menu {
+  display: none;
   z-index: 5;
   &:hover {
     cursor: pointer;
+    content: url("../../../../public/img/burger_hover.png");
+  }
+}
+
+.close-symbol {
+  &:hover {
+    cursor: pointer;
+    content: url("../../../../public/img/close_hover.png");
   }
 }
 
@@ -228,7 +137,7 @@ nav {
   }
 }
 @media (max-width: 900px) {
-  #container {
+  .burger-menu {
     display: block;
   }
   nav {

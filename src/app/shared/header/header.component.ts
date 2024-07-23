@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   mainContent = true;
-  imgSrc: string = '/img/burger.png';
-show: boolean = false;
+  // imgSrc: string = '/img/burger.png';
+ show: boolean = false;
 
 changeShowStatus() {
   this.show = !this.show;

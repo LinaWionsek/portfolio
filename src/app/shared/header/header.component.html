@@ -20,8 +20,8 @@
 
 
 
-        <img class="burger-menu" [src]="imgSrc" (click)="changeShowStatus()"
-            (mouseover)="imgSrc = '/img/burger_hover.png'" (mouseout)="imgSrc = '/img/burger.png'" alt="">
+        <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()"
+            alt="">
 
 
 
@@ -32,9 +32,10 @@
             <a href="" class="logo">
                 <img src="/img/p_red.png" alt="">
             </a>
-            <img class="burger-menu" [src]="imgSrc" (click)="changeShowStatus()"
-                (mouseover)="imgSrc = '/img/burger_hover.png'" (mouseout)="imgSrc = '/img/burger.png'" alt="">
+            <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()"
+               alt="">
         </div>
+        <!-- (mouseover)="imgSrc = '/img/close_hover.png'" (mouseout)="imgSrc = '/img/close.png'" -->
 
         <div class="dialog-links">
             <a (click)="closeDialog()" href="#about_me">About me</a>
