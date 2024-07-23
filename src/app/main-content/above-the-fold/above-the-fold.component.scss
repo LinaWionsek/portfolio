@@ -251,6 +251,7 @@ section {
 
   .right {
     margin-left: 25px;
+    margin-top: -20px;
     padding-top: 0;
   }
 
@@ -281,6 +282,7 @@ section {
 
   .main-headline {
     color: white;
+    margin-top: -20px;
   }
 
   .frontend {
@@ -304,6 +306,9 @@ section {
     .ellipse-mobile {
       scale: 1.5;
     }
+    .profile-picture {
+      left: -10px;
+    }
   }
 }
 
@@ -311,6 +316,11 @@ section {
   .img-container {
     .ellipse-mobile {
       scale: 1.3;
+    }
+    .profile-picture {
+      left: -70px;
+      scale: 0.9;
+      margin-bottom: -33px;
     }
   }
 }
@@ -332,6 +342,11 @@ section {
     .ellipse-mobile {
       scale: 1;
     }
+    .profile-picture {
+      scale: 0.8;
+      margin-bottom: -65px;
+      left: -100px;
+    }
   }
 
   .frontend {
@@ -350,7 +365,7 @@ section {
     .ellipse-mobile {
       scale: 0.95;
       margin-left: -10px;
-      margin-top: -134px;
+      margin-top: -136px;
     }
   }
 }
@@ -376,11 +391,19 @@ section {
       margin-left: -35px;
       margin-top: -173px;
     }
+    .profile-picture {
+      scale: 0.55;
+      bottom: -86px;
+      left: -110px;
+    }
   }
   .right {
     margin-left: 10px;
+    margin-right: 10px;
     padding-top: 0;
+    margin-top: -40px;
   }
+
   .frontend {
     font-size: 54px;
   }

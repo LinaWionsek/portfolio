@@ -199,7 +199,8 @@ nav {
 @media (max-width: 350px) {
   nav {
     height: 120px;
-    margin: 0px 10px;
+    margin-right: 10px;
+    margin-left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
