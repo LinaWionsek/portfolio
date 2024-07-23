@@ -141,12 +141,60 @@ nav {
 // }
 
 .dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100vw;
-  background-color: yellow;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 5;
+  padding: 25px;
+  gap: 200px;
 }
+.dialog-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dialog-links {
+  font-family: $montserratFont;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  > a {
+    width: 120px;
+    text-decoration: none;
+    color: $red;
+    text-align: center;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+}
+// position: fixed;
+// justify-self: center;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// gap: 0px;
+// top: 97.5px;
+// left: 0;
+// right: 0;
+// max-width: 1550px;
+// width: 100%;
+// height: calc(100% - 112.5px);
+// background: #141d2fef;
+// z-index: 5;
+
 .show {
-  display: unset;
+  display: flex;
 }
 .hide {
   display: none;

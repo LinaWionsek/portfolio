@@ -16,4 +16,8 @@ show: boolean = false;
 changeShowStatus() {
   this.show = !this.show;
 }
+
+closeDialog(){
+  this.show = false
+}
 }
