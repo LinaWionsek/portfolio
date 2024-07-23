@@ -311,12 +311,52 @@ input[type="checkbox"]:checked::before {
 }
 
 @media (max-width: 900px) {
-  .contact-container {
-    flex-direction: column;
+  section {
+    padding: 25px;
   }
 
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  form {
+    width: 100%;
+    >div {
+      width: 100%;
+    }
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  textarea {
+    min-width: 340px;
+    width: 100%;
+  }
+  .contact-container {
+    flex-direction: column;
+    margin-top: 0;
+    > div {
+      width: auto;
+      gap: 12px;
+    }
+  }
+.form-fields {
+  margin-top: 50px;
+}
   .upbutton {
-    margin-top: 703px;
+    margin-top: 623px;
     margin-left: 0px;
   }
 }
+
+@media (max-width: 360px) {
+  section {
+    padding: 10px;
+  }
+} // 20 10 (10 side)
