@@ -42,7 +42,6 @@ span {
 .ellipse-8,
 .ellipse-9 {
   position: absolute;
-  display: none;
 }
 
 .ellipse-4 {
@@ -61,13 +60,11 @@ span {
 }
 
 .ellipse-7 {
-  // left: 760px;
-  right: 0;
+  left: 760px;
   top: 860px;
 }
 
 .ellipse-8 {
-  /* left: 0px; */
   top: 1280px;
 }
 
@@ -80,9 +77,9 @@ span {
   .ellipse-5 {
     left: 990px;
   }
-  // .ellipse-7 {
-  //   left: 776px;
-  // }
+  .ellipse-7 {
+    left: 626px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -97,19 +94,19 @@ span {
     left: 860px;
   }
 
-  // .ellipse-7 {
-  //   left: 588px;
-  // }
+  .ellipse-7 {
+    left: 518px;
+  }
   .ellipse-9 {
     top: 1664px;
   }
 }
 
-@media (max-width: 1280px) {
-  section {
-    margin: 50px;
+@media (max-width: 1100px) {
+  .ellipse-7 {
+    left: 300px;
   }
-} 
+}
 @media (max-width: 900px) {
   section {
     margin: 25px;
@@ -122,12 +119,12 @@ span {
     line-height: 77px;
     margin-bottom: 0;
   }
-} 
+}
 @media (max-width: 360px) {
   section {
     margin: 10px;
   }
-} 
+}
 
 @media (max-width: 1250px) {
   // .ellipse-7 {
@@ -145,7 +142,8 @@ span {
 
 @media (max-width: 1160px) {
   .ellipse-5 {
-    left: 540px;
+    left: 620px;
+    top: 100px;
   }
   // .ellipse-7 {
   //   left: 357px;
@@ -153,41 +151,105 @@ span {
 }
 
 @media (max-width: 950px) {
-  .ellipse-5 {
-    left: 540px;
-  }
+  // .ellipse-5 {
+  //   left: 540px;
+  // }
   // .ellipse-7 {
   //   left: 251px;
   // }
 }
 
 @media (max-width: 850px) {
-  .ellipse-5 {
-    left: 540px;
-  }
+  // .ellipse-5 {
+  //   left: 600px;
+  // }
   // .ellipse-7 {
   //   left: 144px;
   // }
 }
 
 @media (max-width: 900px) {
+  .ellipse-4 {
+    left: 280px;
+  }
   .ellipse-5 {
-    left: 0;
+    left: 560px;
+    top: 80px;
+  }
+  .ellipse-6 {
+    left: -80px;
+    top: 250px;
+    scale: 0.5;
+  }
+  .ellipse-7 {
+    left: 560px;
+    top: 730px;
   }
   .ellipse-8 {
-    top: 2000px;
+    top: 1910px;
+    left: 240px;
   }
   .ellipse-9 {
-    left: -80px;
-    top: 2255px;
+    left: -73px;
+    top: 1723px;
   }
 
   .ellipse-4,
   .ellipse-5,
-  .ellipse-6,
   .ellipse-7,
   .ellipse-8,
   .ellipse-9 {
-    display: none;
+    // display: none;
+    scale: 0.4;
+  }
+  @media (max-width: 750px) {
+    .ellipse-7 {
+      left: 390px;
+      top: 730px;
+    }
+  }
+  @media (max-width: 750px) {
+    .ellipse-5 {
+      left: 360px;
+      top: 80px;
+    }
+  }
+  @media (max-width: 600px) {
+    .ellipse-4 {
+      left: 250px;
+    }
+    .ellipse-5 {
+      left: 270px;
+    }
+    .ellipse-7 {
+      left: 270px;
+      top: 730px;
+    }
+  }
+  @media (max-width: 500px) {
+    .ellipse-4 {
+      left: 220px;
+      top: -80px;
+    }
+    .ellipse-5 {
+      left: 130px;
+      top: 110px;
+    }
+    .ellipse-7 {
+      left: 150px;
+      top: 730px;
+    }
   }
 }
+@media (max-width: 400px) {
+  .ellipse-7 {
+    left: 0px;
+  }
+}
+// 9
+// left: -73px;
+// top: 1723px;
+
+// 8
+// top: 1910px;
+//         left: 240px;
