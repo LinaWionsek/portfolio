@@ -109,7 +109,7 @@ span {
   section {
     margin: 50px;
   }
-} //50
+} 
 @media (max-width: 900px) {
   section {
     margin: 25px;
@@ -122,12 +122,12 @@ span {
     line-height: 77px;
     margin-bottom: 0;
   }
-} // 50 25
+} 
 @media (max-width: 360px) {
   section {
     margin: 10px;
   }
-} // 20 10
+} 
 
 @media (max-width: 1250px) {
   // .ellipse-7 {

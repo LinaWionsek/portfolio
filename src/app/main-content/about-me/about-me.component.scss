@@ -129,13 +129,37 @@ section {
     height: 54px;
     padding: 13px 24px;
   }
+
+  .ellipse-3 {
+    margin-left: 500px;
+  }
 }
 
+@media (max-width: 650px) {
+  .ellipse-2 {
+    scale: 0.8;
+  }
+
+  .ellipse-3 {
+    margin-left: 290px;
+    scale: 0.8;
+  }
+}
+@media (max-width: 400px) {
+  .ellipse-2 {
+    scale: 0.6;
+  }
+
+  .ellipse-3 {
+    margin-left: 210px;
+    scale: 0.6;
+  }
+}
 @media (max-width: 360px) {
   section {
     margin: 0px 10px 20px 10px;
   }
-  .ellipse-2 {
-    scale: 0.8;
-  }
+  // .ellipse-2 {
+  //   scale: 0.8;
+  // }
 }
