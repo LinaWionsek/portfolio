@@ -34,7 +34,9 @@ span {
     position: relative;
   }
 }
-
+.ellipse-mobile {
+  display: none;
+}
 .ellipse-4,
 .ellipse-5,
 .ellipse-6,
@@ -78,7 +80,15 @@ span {
     left: 990px;
   }
   .ellipse-7 {
-    left: 626px;
+    // left: 626px;
+    display: none;
+  }
+  .ellipse-mobile {
+    display: block;
+    position: absolute;
+    scale: 0.8;
+    left: 550px;
+    top: 860px;
   }
 }
 
@@ -93,7 +103,13 @@ span {
   .ellipse-5 {
     left: 860px;
   }
-
+  .ellipse-mobile {
+    display: block;
+    position: absolute;
+    scale: 0.8;
+    left: 448px;
+    top: 790px;
+  }
   .ellipse-7 {
     left: 518px;
   }
@@ -102,11 +118,31 @@ span {
   }
 }
 
+@media (max-width: 1160px) {
+  .ellipse-5 {
+    left: 620px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .ellipse-5 {
+    left: 640px;
+  }
+}
+
 @media (max-width: 1100px) {
   .ellipse-7 {
     left: 300px;
   }
+
+  .ellipse-mobile {
+    left: 220px;
+
+    top: 730px;
+  }
 }
+
 @media (max-width: 900px) {
   section {
     margin: 25px;
@@ -119,56 +155,7 @@ span {
     line-height: 77px;
     margin-bottom: 0;
   }
-}
-@media (max-width: 360px) {
-  section {
-    margin: 10px;
-  }
-}
 
-@media (max-width: 1250px) {
-  // .ellipse-7 {
-  //   left: 560px;
-  // }
-}
-@media (max-width: 1150px) {
-  .ellipse-5 {
-    left: 640px;
-  }
-  // .ellipse-7 {
-  //   left: 457px;
-  // }
-}
-
-@media (max-width: 1160px) {
-  .ellipse-5 {
-    left: 620px;
-    top: 100px;
-  }
-  // .ellipse-7 {
-  //   left: 357px;
-  // }
-}
-
-@media (max-width: 950px) {
-  // .ellipse-5 {
-  //   left: 540px;
-  // }
-  // .ellipse-7 {
-  //   left: 251px;
-  // }
-}
-
-@media (max-width: 850px) {
-  // .ellipse-5 {
-  //   left: 600px;
-  // }
-  // .ellipse-7 {
-  //   left: 144px;
-  // }
-}
-
-@media (max-width: 900px) {
   .ellipse-4 {
     left: 280px;
   }
@@ -194,26 +181,33 @@ span {
     top: 1723px;
   }
 
+  .ellipse-mobile {
+    left: 210px;
+  }
+
   .ellipse-4,
   .ellipse-5,
   .ellipse-7,
   .ellipse-8,
-  .ellipse-9 {
+  .ellipse-9,
+  .ellipse-mobile {
     // display: none;
     scale: 0.4;
-  }
-  @media (max-width: 750px) {
-    .ellipse-7 {
-      left: 390px;
-      top: 730px;
-    }
   }
   @media (max-width: 750px) {
     .ellipse-5 {
       left: 360px;
       top: 80px;
     }
+    .ellipse-7 {
+      left: 390px;
+      top: 730px;
+    }
+    .ellipse-mobile {
+      left: 100px;
+    }
   }
+
   @media (max-width: 600px) {
     .ellipse-4 {
       left: 250px;
@@ -224,6 +218,9 @@ span {
     .ellipse-7 {
       left: 270px;
       top: 730px;
+    }
+    .ellipse-mobile {
+      left: 10px;
     }
   }
   @media (max-width: 500px) {
@@ -239,17 +236,30 @@ span {
       left: 150px;
       top: 730px;
     }
+    .ellipse-mobile {
+      left: -100px;
+      top: 750px;
+    }
   }
 }
 @media (max-width: 400px) {
   .ellipse-7 {
     left: 0px;
   }
+  .ellipse-mobile {
+    left: -120px;
+    top: 750px;
+  }
 }
-// 9
-// left: -73px;
-// top: 1723px;
 
-// 8
-// top: 1910px;
-//         left: 240px;
+@media (max-width: 360px) {
+  section {
+    margin: 10px;
+  }
+
+  .ellipse-mobile {
+    left: -120px;
+    scale: 0.3;
+    top: 800px;
+  }
+}
