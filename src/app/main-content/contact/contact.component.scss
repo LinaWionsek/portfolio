@@ -109,7 +109,10 @@ textarea {
 .contact-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  gap: 28px;
+  z-index: 2;
   > div {
     display: flex;
     flex-direction: column;
@@ -296,17 +299,77 @@ input[type="checkbox"]:checked::before {
   position: absolute;
   height: 40px;
   width: 40px !important;
-  margin-top: 465px;
+  margin-top: 560px;
   margin-left: 1px;
   &:hover {
     cursor: pointer;
     background: url("../../../../public/img/upbutton_unfilled.png") no-repeat;
   }
 }
+.ellipse-container {
+  position: absolute;
+}
+.ellipse-12 {
+  height: 204px;
+  width: 204px;
+  position: relative;
+  bottom: -421px;
+  right: -132px;
+}
+
+.ellipse-13 {
+  height: 73px;
+  width: 73px;
+  position: relative;
+  bottom: -601px;
+  right: -932px;
+}
+
+@media (max-width: 1350px) {
+  .ellipse-12 {
+    right: -92px;
+  }
+  .ellipse-13 {
+    right: -802px;
+    // bottom: -481px;
+  }
+}
 
 @media (max-width: 1280px) {
   section {
     padding: 50px;
+  }
+}
+@media (max-width: 1180px) {
+  .ellipse-12 {
+    bottom: -491px;
+  }
+  .ellipse-13 {
+    right: -712px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ellipse-12 {
+    scale: 0.8;
+    right: -62px;
+    bottom: -501px;
+  }
+  .ellipse-13 {
+    scale: 0.8;
+    right: -632px;
+    bottom: -621px;
+  }
+}
+@media (max-width: 1000px) {
+  .ellipse-12 {
+    scale: 0.7;
+    right: -462px;
+    bottom: -261px;
+  }
+  .ellipse-13 {
+    scale: 0.8;
+    right: -532px;
   }
 }
 
@@ -325,7 +388,7 @@ input[type="checkbox"]:checked::before {
 
   form {
     width: 100%;
-    >div {
+    > div {
       width: 100%;
     }
   }
@@ -346,12 +409,94 @@ input[type="checkbox"]:checked::before {
       gap: 12px;
     }
   }
-.form-fields {
-  margin-top: 50px;
-}
+  .form-fields {
+    margin-top: 50px;
+  }
   .upbutton {
-    margin-top: 673px;
+    margin-top: 743px;
     margin-left: 0px;
+  }
+
+  .ellipse-12 {
+    scale: 0.7;
+    right: -302px;
+    bottom: -371px;
+  }
+  .ellipse-13 {
+    scale: 0.8;
+    right: -392px;
+    bottom: -631px;
+  }
+}
+@media (max-width: 720px) {
+  .ellipse-12 {
+    right: -192px;
+    bottom: -391px;
+  }
+  .ellipse-13 {
+    right: -282px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ellipse-12 {
+    // right: -192px;
+    // bottom: -361px;
+  }
+  .ellipse-13 {
+    right: -232px;
+    bottom: -661px;
+  }
+  .upbutton {
+    margin-top: 773px;
+  }
+}
+
+@media (max-width: 550px) {
+  .ellipse-12 {
+    right: -162px;
+  }
+  .ellipse-13 {
+    right: -152px;
+    bottom: -681px;
+  }
+}
+
+@media (max-width: 470px) {
+  .ellipse-12 {
+    right: -112px;
+  }
+  .ellipse-13 {
+    right: -112px;
+  }
+}
+
+@media (max-width: 430px) {
+  .ellipse-12 {
+    scale: 0.7;
+    right: -82px;
+    bottom: -401px;
+  }
+  .ellipse-13 {
+    scale: 0.7;
+    right: -92px;
+    bottom: -711px;
+  }
+  .upbutton {
+    margin-top: 813px;
+  }
+}
+
+@media (max-width: 400px) {
+  textarea {
+    min-width: 200px;
+  }
+  .ellipse-12 {
+    bottom: -431px;
+  }
+  .ellipse-13 {
+    right: -61px;
+    bottom: -751px;
   }
 }
 
@@ -359,4 +504,17 @@ input[type="checkbox"]:checked::before {
   section {
     padding: 10px;
   }
-} // 20 10 (10 side)
+  .ellipse-12 {
+    scale: 0.5;
+    right: -65px;
+    bottom: -413px;
+  }
+  .ellipse-13 {
+    scale: 0.6;
+    right: -27px;
+    bottom: -781px;
+  }
+  .upbutton {
+    margin-top: 853px;
+  }
+}
