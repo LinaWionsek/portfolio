@@ -113,6 +113,9 @@ span {
 }
 
 @media (max-width: 900px) {
+  section {
+    padding: 25px;
+  }
   .main-content {
     flex-direction: column;
     gap: 30px;
@@ -121,5 +124,12 @@ span {
   .logo-container {
     display: flex;
     justify-content: center;
+  }
+}
+
+
+@media (max-width: 360px) {
+  section {
+    padding: 10px;
   }
 }

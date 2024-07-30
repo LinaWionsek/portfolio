@@ -325,6 +325,16 @@ input[type="checkbox"]:checked::before {
   right: -932px;
 }
 
+.notification-box {
+  background-color: gray;
+  position: absolute;
+  bottom: -420%;
+  left: 25%;
+  z-index: 200;
+  height: 100px;
+  width: 50vw;
+}
+
 @media (max-width: 1350px) {
   .ellipse-12 {
     right: -92px;
@@ -495,7 +505,8 @@ input[type="checkbox"]:checked::before {
     bottom: -431px;
   }
   .ellipse-13 {
-    right: -61px;
+    right: -41px;
+
     bottom: -751px;
   }
 }
