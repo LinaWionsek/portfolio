@@ -93,7 +93,7 @@ textarea {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .mt-32 {
@@ -326,14 +326,54 @@ input[type="checkbox"]:checked::before {
 }
 
 .notification-box {
-  background-color: gray;
-  position: absolute;
-  bottom: -420%;
-  left: 25%;
-  z-index: 200;
-  height: 100px;
-  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: $montserratFont;
+  font-size: 16px;
+  z-index: 5;
+  background-color: $red;
+  top: calc(500% + 560px);
+  left: calc(50% - 326px / 2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 326px;
+  height: 74px;
+  margin-top: 20px;
 }
+
+
+.slide-in {
+  animation: slide-in 0.5s ease;
+}
+
+.slide-out {
+  animation: slide-out 0.5s ease;
+}
+
+@keyframes slide-in {
+  0% {
+      transform: translateX(400%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(400%);
+  }
+}
+
+
 
 @media (max-width: 1350px) {
   .ellipse-12 {
@@ -342,6 +382,9 @@ input[type="checkbox"]:checked::before {
   .ellipse-13 {
     right: -802px;
     // bottom: -481px;
+  }
+  .notification-box {
+    top: calc(460% + 560px);
   }
 }
 

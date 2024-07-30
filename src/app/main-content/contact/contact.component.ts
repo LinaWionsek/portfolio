@@ -11,7 +11,6 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
   http = inject(HttpClient);
 
   onChange(event: Event): void {
@@ -22,11 +21,10 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    checked:false
+    checked: false,
   };
 
   mailTest = false;
-
 
   post = {
     endPoint: 'https://lina-wionsek.de/sendMail.php',
@@ -41,30 +39,71 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      debugger;
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      // debugger;
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
-            console.log("response")
+            console.log('response');
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
+      this.changesSaved();
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      
       ngForm.resetForm();
     }
   }
-
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  // /**
+  //  * Function to slide one object into view.
+  //  *
+  //  * @param {string} frontId - The ID of the front element to slide in
+  //  */
+  // slideOneObject(frontId) {
+  //   toggleVisibility(frontId, true);
+  //   slideInAnimation = document.getElementById(frontId);
+  //   slideInAnimation.classList.remove('slide-out', 'slide-in');
+  //   slideInAnimation.offsetHeight;
+  //   slideInAnimation.classList.add('slide-in');
+  // }
 
+  // /**
+  //  * A function to create a slide out animation for a specified element.
+  //  *
+  //  * @param {string} frontId - The ID of the front element to slide out
+  //  */
+  // slideOutOneObject(frontId) {
+  //   toggleVisibility(frontId, true);
+  //   slideInAnimation = document.getElementById(frontId);
+  //   slideInAnimation.classList.remove('slide-out', 'slide-in');
+  //   slideInAnimation.offsetHeight;
+  //   slideInAnimation.classList.add('slide-out');
+  // }
 
+  changesSaved() {
+    let slideInAnimation = document.getElementById('success_info_container');
+    if (slideInAnimation) {
+      slideInAnimation.classList.remove('d-none', 'slide-out', 'slide-in');
+      slideInAnimation.offsetHeight;
+      slideInAnimation.classList.add('slide-in');
+      setTimeout(function () {
+        slideInAnimation.classList.remove('slide-out', 'slide-in');
+        slideInAnimation.offsetHeight;
+        slideInAnimation.classList.add('slide-out');
+        // slideOutOneObject('success_info_container');
+      }, 2500);
+      setTimeout(function () {
+        slideInAnimation.classList.add('d-none');
+        // toggleVisibility('success_info_container', false);
+      }, 2900);
+    }
+  }
 }
