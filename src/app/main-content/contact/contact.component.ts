@@ -62,32 +62,6 @@ export class ContactComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // /**
-  //  * Function to slide one object into view.
-  //  *
-  //  * @param {string} frontId - The ID of the front element to slide in
-  //  */
-  // slideOneObject(frontId) {
-  //   toggleVisibility(frontId, true);
-  //   slideInAnimation = document.getElementById(frontId);
-  //   slideInAnimation.classList.remove('slide-out', 'slide-in');
-  //   slideInAnimation.offsetHeight;
-  //   slideInAnimation.classList.add('slide-in');
-  // }
-
-  // /**
-  //  * A function to create a slide out animation for a specified element.
-  //  *
-  //  * @param {string} frontId - The ID of the front element to slide out
-  //  */
-  // slideOutOneObject(frontId) {
-  //   toggleVisibility(frontId, true);
-  //   slideInAnimation = document.getElementById(frontId);
-  //   slideInAnimation.classList.remove('slide-out', 'slide-in');
-  //   slideInAnimation.offsetHeight;
-  //   slideInAnimation.classList.add('slide-out');
-  // }
-
   changesSaved() {
     let slideInAnimation = document.getElementById('success_info_container');
     if (slideInAnimation) {
@@ -98,11 +72,9 @@ export class ContactComponent {
         slideInAnimation.classList.remove('slide-out', 'slide-in');
         slideInAnimation.offsetHeight;
         slideInAnimation.classList.add('slide-out');
-        // slideOutOneObject('success_info_container');
       }, 2500);
       setTimeout(function () {
         slideInAnimation.classList.add('d-none');
-        // toggleVisibility('success_info_container', false);
       }, 2900);
     }
   }

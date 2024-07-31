@@ -1,13 +1,43 @@
+@import "../styles.scss";
+
 .max-width {
   width: 1440px;
   overflow: hidden;
 }
-
-:host {
-    display: flex;
-    justify-content: center;
+.rotate-device {
+  display: none;
 }
+:host {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 950px) and (orientation: landscape) {
 
+  .rotate-device {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $red;
+    font-family: $balooFont;
+    color: white;
+    z-index: 1000;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    & h2 {
+      font-size: 36px;
+    }
+    & span {
+      font-size: 20px;
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .max-width {
