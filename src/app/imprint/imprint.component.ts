@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-imprint',
   standalone: true,
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
+  constructor(private location: Location) {}
 
+  goBack(){
+    this.location.back();
+  }
+ 
 }
