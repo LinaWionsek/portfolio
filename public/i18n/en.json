@@ -1,4 +1,22 @@
 {
-  "hello": "Hello! I am Lina",
-  "about-me": "About me"
+  "header-about": "About me",
+  "header-skills": "My skills",
+  "header-work": "My work",
+  "above-the-fold": "Hello! I am Lina",
+  "indroduction-title":"Let's work together",
+  "indroduction-description":"I am a frontend developer from Mönchengladbach and love creating web applications with Angular and JavaScript. Thanks to my eye for detail and my technical skills, I am able to implement projects in a visually appealing and user-friendly way. I am looking forward to new challenges and am open to learning other frameworks such as React.js or Vue.js.",
+  "indroduction-button":"Send a message",
+  "skills": "Skill set",
+  "portfolio-title": "My work",
+  "portfolio-description": "Feel free to try out my latest development projects and look into their code. Explore a selection of my work here - Interact with projects to see my skills in action.",
+  "contact": "Contact",
+  "contact-title": "Got a problem to solve?",
+  "contact-description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+  "contact-cta": "Need a Frontend developer? Contact me!",
+  "acknowledgment1": "I've read the",
+  "acknowledgment2": "privacy policy",
+  "acknowledgment3": "and agree to the processing of my data as outlined.",
+  "acknowledgment-button": "Say hello :)",
+  "imprint": "Imprint"
+
 }
