@@ -144,10 +144,13 @@ textarea {
       cursor: pointer;
     }
 
-    .privacy-link {
-      color: $red;
-      text-decoration: underline;
-      font-weight: bold;
+    .consent-statement {
+      a {
+        color: $red;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+   
     }
   }
 }
@@ -155,12 +158,6 @@ textarea {
 .consent-statement {
   font-size: 14px;
   font-family: $montserratFont;
-  display: flex;
-}
-
-.privacy-link {
-  width: 110px;
-  text-align: center;
   a {
     color: $red;
     &:hover {
@@ -170,6 +167,7 @@ textarea {
     }
   }
 }
+
 
 .checkbox-container {
   height: 21px;
@@ -313,7 +311,8 @@ input[type="checkbox"]:checked::before {
   height: 204px;
   width: 204px;
   position: relative;
-  bottom: -421px;
+  // bottom: -421px;
+  bottom: -501px;
   right: -132px;
 }
 

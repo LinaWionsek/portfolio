@@ -5,15 +5,14 @@
     </div>
 
     <div>
-        <h1>Contact</h1>
+        <h1>{{ 'contact' | translate }}</h1>
     </div>
 
     <div class="contact-container">
         <div>
-            <h2>Got a problem to solve?</h2>
-            <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                contributing to your projects with my work.</span>
-            <span class="red">Need a Frontend developer? <b>Contact me!</b></span>
+            <h2> {{ 'contact-title' | translate }}</h2>
+            <span>{{ 'contact-description' | translate }}</span>
+            <span class="red">{{ 'contact-cta-1' | translate }} <b>{{ 'contact-cta-2' | translate }}</b></span>
         </div>
         <div (click)="scrollToTop()" class="upbutton"></div>
 
@@ -25,7 +24,7 @@
                         <label for="name"></label>
                         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning"
                             [ngClass]="{'success-icon': name.valid  , 'warning-icon': !name.valid && name.touched}"
-                            name="name" placeholder="Your name.." required>
+                            name="name" placeholder="{{ 'contact-placeholder-1' | translate }}" required>
 
                         @if (!name.valid && name.touched){
                         <span class="warning-text">Your name is required</span>
@@ -36,7 +35,7 @@
                         <label for="email"></label>
                         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
                             [ngClass]="{'success-icon': email.valid  , 'warning-icon': !email.valid && email.touched}"
-                            name="email" placeholder="Your mail.." required
+                            name="email" placeholder="{{ 'contact-placeholder-2' | translate }}" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
                         @if (!email.valid && email.touched){
@@ -49,7 +48,8 @@
                         <label for="message"></label>
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
                             [ngClass]="{'success-icon-message': message.valid  , 'warning-icon-message': !message.valid && message.touched}"
-                            name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                            name="message" placeholder="{{ 'contact-placeholder-3' | translate }}" style="height:200px"
+                            required></textarea>
 
                         @if (!message.valid && message.touched){
                         <span class="warning-text">Please enter a message</span>
@@ -63,23 +63,24 @@
                         <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"
                             id="checkbox_id" (change)="onChange($event)" required>
                     </div>
-                    <span class="consent-statement">I've read the <div class="privacy-link"><a routerLink="/privacy-policy">privacy policy</a></div>
-                        and agree to the
-                        processing of
-                        my data as outlined.</span>
+                    <span class="consent-statement">{{ 'acknowledgment-1' | translate }}
+
+                        <a routerLink="/privacy-policy">{{ 'acknowledgment-2' | translate }}</a>
+
+                        {{ 'acknowledgment-3' | translate }}</span>
                 </div>
 
                 @if (!checkbox.valid && checkbox.touched){
                 <span class="warning-text"> Please accept the privacy policy</span>
                 }
 
-                
+
 
             </div>
 
 
             <input [ngClass]="{'btn-disabled': !contactForm.valid, 'btn-success': contactForm.valid}" type="submit"
-                class="submit-button" value="Say hello :)" [disabled]="!contactForm.valid">
+                class="submit-button" value="{{ 'acknowledgment-button' | translate }}" [disabled]="!contactForm.valid">
 
 
 
@@ -104,9 +105,9 @@
         </form>
 
 
-       
+
     </div>
 
-    <div class="notification-box d-none" id="success_info_container">     Message succesfully sent</div>
+    <div class="notification-box d-none" id="success_info_container"> Message succesfully sent</div>
 
 </section>

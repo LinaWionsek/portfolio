@@ -9,12 +9,14 @@
 
         <div class="menu-container">
             <div class="nav-links">
-                <a href="#about_me">About me</a>
-                <a href="#my_skills">Skill set</a>
-                <a href="#my_work">My Work</a>
+                <!-- <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a> -->
+                <a href="#about_me">{{ 'header-about' | translate }}</a>
+                <a href="#my_skills">{{ 'header-skills' | translate }}</a>
+                <a href="#my_work">{{ 'header-work' | translate }}</a>
             </div>
             <div class="language">
                 <a (click)="translateText('en')" href="#language">EN</a>
+                <hr>
                 <a (click)="translateText('de')" href="#language">DE</a>
             </div>
         </div>
@@ -43,7 +45,16 @@
             <a (click)="closeDialog()" href="#my_skills">Skill set</a>
             <a (click)="closeDialog()" href="#my_work">My Work</a>
             <a (click)="closeDialog()" href="#contact">Contact</a>
+            <div class="language-mobile">
+                <div>
+                    <a (click)="translateText('en')" href="#language">EN</a>
+                    <hr>
+                    <a (click)="translateText('de')" href="#language">DE</a>
+                </div>
+               
+            </div>
         </div>
+       
 
     </div>
 </section>

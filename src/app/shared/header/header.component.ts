@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -26,5 +27,10 @@ export class HeaderComponent {
 
   translateText(lang: string) {
     this.translate.use(lang);
+  }
+
+  scrollTo(id: string) {
+    window.location.hash = id;
+    console.log("clicked")
   }
 }

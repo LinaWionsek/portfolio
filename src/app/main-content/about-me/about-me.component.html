@@ -1,24 +1,23 @@
-
 <section>
     <img src="/img/ellipse2.png" class="ellipse-2" alt="">
     <img src="/img/ellipse3.png" class="ellipse-3" alt="">
     <div class="work-together-container">
         <div class="headline-container">
-            <span class="headline">Let's&nbsp;work</span>
-            <span class="headline mt-60neg" style="margin-top: -60px;">together</span>
+            <span class="headline"> {{ 'indroduction-title' | translate }}</span>
+            <!-- <span class="headline mt-60neg" style="margin-top: -60px;">together</span> -->
         </div>
-     
+
         <div class="description-container">
             <span>
-                I am a frontend developer from Mönchengladbach and love creating web applications with Angular and JavaScript.<br>
-                Thanks to my eye for detail and my technical skills, I am able to implement projects in a visually appealing and user-friendly way.
-                <br>
-                I am looking forward to new challenges and am open to learning other frameworks such as React.js or Vue.js.
-                </span>
-                <button (click)="scrollToContactForm()" class="btn">Send a message</button>
+                {{ 'indroduction-description-1' | translate }}
+                {{ 'indroduction-description-2' | translate }}
+                <br><br>
+                {{ 'indroduction-description-3' | translate }}
+            </span>
+            <button (click)="scrollToContactForm()" class="btn">  {{ 'indroduction-button' | translate }}</button>
         </div>
     </div>
-    
+
 </section>
 
 <!-- <span>
