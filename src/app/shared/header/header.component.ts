@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
@@ -9,15 +11,20 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  translate: TranslateService = inject(TranslateService);
   mainContent = true;
   // imgSrc: string = '/img/burger.png';
- show: boolean = false;
+  show: boolean = false;
 
-changeShowStatus() {
-  this.show = !this.show;
-}
+  changeShowStatus() {
+    this.show = !this.show;
+  }
 
-closeDialog(){
-  this.show = false
-}
+  closeDialog() {
+    this.show = false;
+  }
+
+  translateText(lang: string) {
+    this.translate.use(lang);
+  }
 }
