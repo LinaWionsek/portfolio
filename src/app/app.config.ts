@@ -24,9 +24,9 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptorsFromDi()),
     provideRouter(
       routes,
-      withInMemoryScrolling({
-        scrollPositionRestoration: 'top',
-      })
+      // withInMemoryScrolling({
+      //   scrollPositionRestoration: 'top',
+      // })
     ),
     importProvidersFrom([
       TranslateModule.forRoot({
