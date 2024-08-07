@@ -4,7 +4,7 @@
     <div class="content">
         @for(singleproject of projectsservice.projects; track singleproject.name; let index = $index;){
 
-
+       
         <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" class="project-container">
 
             <a [href]="singleproject.demo" target="_blank" class="project-demo">
@@ -14,7 +14,8 @@
             <div [ngClass]="{'project-info-reverse': index === 1}" class="project-info">
                 <div class="project-headline">{{singleproject.name}}</div>
                 <div class="project-tech-stack">{{singleproject.tech_stack}}</div>
-                <div class="project-description">{{singleproject.description}}</div>
+                <div *ngIf="englishLang" class="project-description">{{singleproject.description}}</div>
+                <div *ngIf="!englishLang" class="project-description">{{singleproject.description_de}}</div>
                 <div class="project-buttons">
                     <button class="live-test-btn" (click)="openURL(singleproject.demo)" target="_blank">Live test</button>
                     <button class="btn" (click)="openURL(singleproject.github)" target="_blank">Github</button>
