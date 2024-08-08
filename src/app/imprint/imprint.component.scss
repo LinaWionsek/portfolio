@@ -7,11 +7,11 @@ section {
   padding: 100px;
 }
 
-p {
+::ng-deep p {
   margin: 16px 0px;
 }
 
-a {
+::ng-deep a {
     color: black;
 }
 

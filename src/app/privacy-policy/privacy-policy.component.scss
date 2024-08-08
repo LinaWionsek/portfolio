@@ -10,10 +10,19 @@ section {
   gap: 16px;
 }
 
-a {
+::ng-deep a {
   color: black;
 }
+::ng-deep p {
+  margin: 16px 0px;
+}
+::ng-deep h3 {
+  margin: 16px 0px;
+}
 
+::ng-deep h2 {
+  margin: 16px 0px;
+}
 
 .img-container {
   display: flex;
