@@ -23,8 +23,7 @@
 
 
 
-        <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()"
-            alt="">
+        <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()" alt="">
 
 
 
@@ -35,26 +34,25 @@
             <a href="" class="logo">
                 <img src="/img/p_red.png" alt="">
             </a>
-            <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()"
-               alt="">
+            <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()" alt="">
         </div>
         <!-- (mouseover)="imgSrc = '/img/close_hover.png'" (mouseout)="imgSrc = '/img/close.png'" -->
 
         <div class="dialog-links">
-            <a (click)="closeDialog()" href="#about_me">About me</a>
-            <a (click)="closeDialog()" href="#my_skills">Skill set</a>
-            <a (click)="closeDialog()" href="#my_work">My Work</a>
-            <a (click)="closeDialog()" href="#contact">Contact</a>
+            <a (click)="closeDialog()" href="#about_me">{{ 'header-about' | translate }}</a>
+            <a (click)="closeDialog()" href="#my_skills">{{ 'header-skills' | translate }}</a>
+            <a (click)="closeDialog()" href="#my_work">{{ 'header-work' | translate }}</a>
+            <a (click)="closeDialog()" href="#contact">{{ 'contact' | translate }}</a>
             <div class="language-mobile">
                 <div>
                     <a (click)="translateText('en')">EN</a>
                     <hr>
                     <a (click)="translateText('de')">DE</a>
                 </div>
-               
+
             </div>
         </div>
-       
+
 
     </div>
 </section>

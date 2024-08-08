@@ -140,7 +140,16 @@ span {
   .ellipse-mobile {
     left: 220px;
 
-    top: 730px;
+    // top: 730px;
+  }
+}
+
+@media (max-width: 980px) {
+  .ellipse-8 {
+    top: 1410px;
+  }
+  .ellipse-9 {
+    top: 1717px;
   }
 }
 
@@ -158,7 +167,8 @@ span {
   }
 
   .ellipse-4 {
-    left: 280px;
+    // left: 280px;
+    left: 380px;
   }
   .ellipse-5 {
     left: 560px;
@@ -211,10 +221,11 @@ span {
 
   @media (max-width: 600px) {
     .ellipse-4 {
-      left: 250px;
+      // left: 250px;
     }
     .ellipse-5 {
       left: 270px;
+      top: 120px;
     }
     .ellipse-7 {
       left: 270px;
@@ -231,7 +242,8 @@ span {
     }
     .ellipse-5 {
       left: 130px;
-      top: 110px;
+      // top: 110px;
+      top: 230px;
     }
     .ellipse-7 {
       left: 150px;
