@@ -63,7 +63,8 @@ span {
 }
 
 .ellipse-7 {
-  left: 760px;
+  // left: 760px;
+  left: 860px;
   top: 860px;
 }
 
@@ -75,7 +76,11 @@ span {
   left: 30px;
   top: 1724px;
 }
-
+@media (max-width: 1450px) {
+  .ellipse-7 {
+    left: 757px;
+  }
+}
 @media (max-width: 1366px) {
   .ellipse-5 {
     left: 990px;
