@@ -3,7 +3,7 @@ import {
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideRouter} from '@angular/router';
 
 import { routes } from './app.routes';
 import {
@@ -24,9 +24,6 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptorsFromDi()),
     provideRouter(
       routes,
-      // withInMemoryScrolling({
-      //   scrollPositionRestoration: 'top',
-      // })
     ),
     importProvidersFrom([
       TranslateModule.forRoot({

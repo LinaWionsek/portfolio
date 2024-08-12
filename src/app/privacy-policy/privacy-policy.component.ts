@@ -6,12 +6,23 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrl: './privacy-policy.component.scss',
 })
 export class PrivacyPolicyComponent {
   constructor(private location: Location) {}
 
-  goBack(){
+  ngOnInit(): void {
+   
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+
+  }
+
+  goBack() {
     this.location.back();
   }
+  
 }
