@@ -235,25 +235,25 @@ input[type="checkbox"]:checked::before {
 .warning-icon {
   background-image: url("../../../../public/img/error.png");
   background-repeat: no-repeat;
-  background-position: 565px center;
+  background-position: right 25px center;
 }
 
 .warning-icon-message {
   background-image: url("../../../../public/img/error.png");
   background-repeat: no-repeat;
-  background-position: 565px 15px;
+  background-position: right 25px top 15px;
 }
 
 .success-icon {
   background-image: url("../../../../public/img/done.png") !important;
   background-repeat: no-repeat;
-  background-position: 565px center;
+  background-position: right 25px center;
 }
 
 .success-icon-message {
   background-image: url("../../../../public/img/done.png");
   background-repeat: no-repeat;
-  background-position: 565px 15px;
+  background-position: right 25px top 15px;
 }
 
 .submit-button {
@@ -475,7 +475,8 @@ input[type="checkbox"]:checked::before {
   .ellipse-13 {
     scale: 0.8;
     right: -392px;
-    bottom: -631px;
+    // bottom: -631px;
+    bottom: -691px;
   }
 }
 @media (max-width: 720px) {
@@ -495,10 +496,10 @@ input[type="checkbox"]:checked::before {
   }
   .ellipse-13 {
     right: -232px;
-    bottom: -661px;
+    bottom: -691px;
   }
   .upbutton {
-    margin-top: 773px;
+    margin-top: 803px;
   }
 }
 
@@ -508,7 +509,16 @@ input[type="checkbox"]:checked::before {
   }
   .ellipse-13 {
     right: -152px;
-    bottom: -681px;
+    // bottom: -681px;
+    bottom: -795px;
+  }
+  .warning-text {
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  .contact-container {
+    padding-bottom: 150px;
   }
 }
 
@@ -530,7 +540,7 @@ input[type="checkbox"]:checked::before {
   .ellipse-13 {
     scale: 0.7;
     right: -92px;
-    bottom: -711px;
+    // bottom: -711px;
   }
   .upbutton {
     margin-top: 813px;
@@ -547,7 +557,10 @@ input[type="checkbox"]:checked::before {
   .ellipse-13 {
     right: -41px;
 
-    bottom: -751px;
+    // bottom: -751px;
+  }
+  .contact-container {
+    padding-bottom: 150px;
   }
 }
 
@@ -563,9 +576,12 @@ input[type="checkbox"]:checked::before {
   .ellipse-13 {
     scale: 0.6;
     right: -27px;
-    bottom: -781px;
+    // bottom: -781px;
   }
   .upbutton {
     margin-top: 853px;
+    // margin-top: 953px;
+    gap: 0;
   }
+
 }

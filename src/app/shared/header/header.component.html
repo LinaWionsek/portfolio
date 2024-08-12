@@ -5,10 +5,13 @@
         </a>
         <div class="menu-container">
             <div class="nav-links">
-                <!-- <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a> -->
-                <a href="#about_me">{{ 'header-about' | translate }}</a>
+                <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a>
+                <a (click)="scrollTo('my_skills')">{{ 'header-skills' | translate }}</a>
+                <a (click)="scrollTo('my_work')">{{ 'header-work' | translate }}</a>
+                
+                <!-- <a href="#about_me">{{ 'header-about' | translate }}</a>
                 <a href="#my_skills">{{ 'header-skills' | translate }}</a>
-                <a href="#my_work">{{ 'header-work' | translate }}</a>
+                <a href="#my_work">{{ 'header-work' | translate }}</a> -->
             </div>
             <div class="language">
                 <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
@@ -27,10 +30,15 @@
             <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()" alt="">
         </div>
         <div class="dialog-links">
-            <a (click)="closeDialog()" href="#about_me">{{ 'header-about' | translate }}</a>
+            <a (click)="scrollTo('about_me')" (click)="closeDialog()">{{ 'header-about' | translate }}</a>
+            <a (click)="scrollTo('my_skills')"(click)="closeDialog()">{{ 'header-skills' | translate }}</a>
+            <a (click)="scrollTo('my_work')" (click)="closeDialog()">{{ 'header-work' | translate }}</a>
+            <a (click)="scrollTo('contact')" (click)="closeDialog()">{{ 'contact' | translate }}</a>
+
+            <!-- <a (click)="closeDialog()" href="#about_me">{{ 'header-about' | translate }}</a>
             <a (click)="closeDialog()" href="#my_skills">{{ 'header-skills' | translate }}</a>
             <a (click)="closeDialog()" href="#my_work">{{ 'header-work' | translate }}</a>
-            <a (click)="closeDialog()" href="#contact">{{ 'contact' | translate }}</a>
+            <a (click)="closeDialog()" href="#contact">{{ 'contact' | translate }}</a>  -->
             <div class="language-mobile">
                 <div>
                     <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
