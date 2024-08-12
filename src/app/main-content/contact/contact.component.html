@@ -22,12 +22,12 @@
                 <div class="form-fields">
                     <div>
                         <label for="name"></label>
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" class="warning"
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" minlength="3" id="name" class="warning"
                             [ngClass]="{'success-icon': name.valid  , 'warning-icon': !name.valid && name.touched}"
                             name="name" placeholder="{{ 'contact-placeholder-1' | translate }}" required>
 
                         @if (!name.valid && name.touched){
-                        <span class="warning-text">Your name is required</span>
+                        <span class="warning-text">{{ 'warning-text-name' | translate }}</span>
                         }
 
                     </div>
@@ -39,7 +39,7 @@
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
                         @if (!email.valid && email.touched){
-                        <span class="warning-text">Your email is required</span>
+                        <span class="warning-text">{{ 'warning-text-mail' | translate }}</span>
                         }
 
                     </div>
@@ -52,7 +52,7 @@
                             required></textarea>
 
                         @if (!message.valid && message.touched){
-                        <span class="warning-text">Please enter a message</span>
+                        <span class="warning-text">{{ 'warning-text-message' | translate }}</span>
                         }
 
                     </div>
@@ -71,7 +71,7 @@
                 </div>
 
                 @if (!checkbox.valid && checkbox.touched){
-                <span class="warning-text"> Please accept the privacy policy</span>
+                <span class="warning-text"> {{ 'warning-text-acknowledgment' | translate }}</span>
                 }
 
 
