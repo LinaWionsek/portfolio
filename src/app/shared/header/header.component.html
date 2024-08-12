@@ -3,10 +3,6 @@
         <a href="" class="logo">
             <img src="/img/logo_new.png" alt="">
         </a>
-        <!-- <a  href="" class="logo">
-            <img src="/img/p_red.png" alt="">
-        </a> -->
-
         <div class="menu-container">
             <div class="nav-links">
                 <!-- <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a> -->
@@ -15,20 +11,14 @@
                 <a href="#my_work">{{ 'header-work' | translate }}</a>
             </div>
             <div class="language">
-                <a (click)="translateText('en')">EN</a>
+                <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
                 <hr>
-                <a (click)="translateText('de')">DE</a>
+                <a (click)="translateText('de')" [ngClass]="{'active': !englishLang}">DE</a>
             </div>
         </div>
-
-
-
         <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()" alt="">
-
-
-
-
     </nav>
+
     <div class="dialog" [ngClass]="{'show': show, 'hide': !show}">
         <div class="dialog-header">
             <a href="" class="logo">
@@ -36,8 +26,6 @@
             </a>
             <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()" alt="">
         </div>
-        <!-- (mouseover)="imgSrc = '/img/close_hover.png'" (mouseout)="imgSrc = '/img/close.png'" -->
-
         <div class="dialog-links">
             <a (click)="closeDialog()" href="#about_me">{{ 'header-about' | translate }}</a>
             <a (click)="closeDialog()" href="#my_skills">{{ 'header-skills' | translate }}</a>
@@ -45,14 +33,11 @@
             <a (click)="closeDialog()" href="#contact">{{ 'contact' | translate }}</a>
             <div class="language-mobile">
                 <div>
-                    <a (click)="translateText('en')">EN</a>
+                    <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
                     <hr>
-                    <a (click)="translateText('de')">DE</a>
+                    <a (click)="translateText('de')" [ngClass]="{'active': !englishLang}">DE</a>
                 </div>
-
             </div>
         </div>
-
-
     </div>
 </section>

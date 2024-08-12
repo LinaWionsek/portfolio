@@ -49,14 +49,16 @@ nav {
   bottom: 23px;
 
   a {
-    color: black;
+    color: $red;
     text-decoration: none;
     &:hover {
+      color: black;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 }
+
 .language-mobile {
   width: 100% !important;
   display: flex;
@@ -65,22 +67,29 @@ nav {
   width: fit-content;
   font-family: "Montserrat", sans-serif;
   a {
-    color: black;
+    color: $red;
     text-decoration: none;
     &:hover {
+      color: black;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
- 
 }
+
+.active {
+  font-weight: 700;
+  color: $red !important;
+}
+
 hr {
   height: 1px;
   width: 100%;
   border-width: 0;
-  color: black;
-  background-color: black;
+  color: $red;
+  background-color: $red;
 }
+
 .dialog {
   position: fixed;
   top: 0;
@@ -103,6 +112,7 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
+
 .dialog-links {
   font-family: $montserratFont;
   font-size: 23px;

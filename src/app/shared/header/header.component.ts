@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
-
 
 @Component({
   selector: 'app-header',
@@ -16,7 +15,20 @@ export class HeaderComponent {
   mainContent = true;
   // imgSrc: string = '/img/burger.png';
   show: boolean = false;
+  englishLang: boolean = false;
+  lang: any;
 
+  ngOnInit(): void {
+    console.log(this.translate.currentLang);
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      console.log(event.lang);
+      if (this.translate.currentLang == 'en') {
+        this.englishLang = true;
+      } else {
+        this.englishLang = false;
+      }
+    });
+  }
   changeShowStatus() {
     this.show = !this.show;
   }
@@ -31,6 +43,6 @@ export class HeaderComponent {
 
   scrollTo(id: string) {
     window.location.hash = id;
-    console.log("clicked")
+    console.log('clicked');
   }
 }
