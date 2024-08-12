@@ -69,8 +69,9 @@ nav {
   a {
     color: $red;
     text-decoration: none;
+
     &:hover {
-      // color: black;
+      color: black;
       cursor: pointer;
       font-weight: 700;
     }
@@ -125,6 +126,7 @@ hr {
     color: $red;
     text-align: center;
     &:hover {
+      cursor: pointer;
       font-weight: 700;
     }
   }

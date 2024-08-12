@@ -62,7 +62,10 @@ export class ContactComponent {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.location.hash = '';
   }
+
+
 
   changesSaved() {
     let slideInAnimation = document.getElementById('success_info_container');

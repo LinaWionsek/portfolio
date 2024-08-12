@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -13,10 +14,10 @@ import { TranslateModule } from '@ngx-translate/core';
 export class HeaderComponent {
   translate: TranslateService = inject(TranslateService);
   mainContent = true;
-  // imgSrc: string = '/img/burger.png';
   show: boolean = false;
   englishLang: boolean = false;
   lang: any;
+
 
   ngOnInit(): void {
     console.log(this.translate.currentLang);
@@ -39,10 +40,10 @@ export class HeaderComponent {
 
   translateText(lang: string) {
     this.translate.use(lang);
+
   }
 
   scrollTo(id: string) {
-    window.location.hash = id;
-    console.log('clicked');
+    window.location.href = '#'+id
   }
 }

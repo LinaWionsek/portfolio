@@ -5,13 +5,11 @@
         </a>
         <div class="menu-container">
             <div class="nav-links">
+             
                 <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a>
                 <a (click)="scrollTo('my_skills')">{{ 'header-skills' | translate }}</a>
                 <a (click)="scrollTo('my_work')">{{ 'header-work' | translate }}</a>
-                
-                <!-- <a href="#about_me">{{ 'header-about' | translate }}</a>
-                <a href="#my_skills">{{ 'header-skills' | translate }}</a>
-                <a href="#my_work">{{ 'header-work' | translate }}</a> -->
+               
             </div>
             <div class="language">
                 <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
