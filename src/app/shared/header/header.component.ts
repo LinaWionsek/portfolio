@@ -44,6 +44,7 @@ export class HeaderComponent {
   }
 
   scrollTo(id: string) {
-    window.location.href = '#'+id
+    window.location.hash = '';
+    window.location.href = '#'+id;
   }
 }

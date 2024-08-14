@@ -48,7 +48,7 @@ section {
 }
 
 .description-container {
-  width: 570px;
+ 
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -57,6 +57,9 @@ section {
   font-family: $montserratFont;
   font-size: 23px;
   padding-top: 30px;
+  > span {
+    width: 570px;
+  }
 }
 
 .button {

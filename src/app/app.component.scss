@@ -11,8 +11,50 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 320px) and (max-width: 960px) and (orientation: landscape) {
 
+.upbutton {
+  background: url("../../public/img/upbutton_filled.png") no-repeat;
+  position: fixed;
+  height: 40px;
+  width: 40px !important;
+  bottom: 1%;
+  left: 2%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 3px white;
+  z-index: 4;
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 8px 2px white;
+    transform: scale(1.08);
+    // background: url("../../public/img/upbutton_unfilled.png") no-repeat;
+  }
+}
+
+@media (min-width: 1536px) {
+  .upbutton {
+    bottom: 5%;
+    left: 6.5%;
+  }
+}
+@media (min-width: 1600px) {
+  .upbutton {
+    bottom: 2%;
+    left: 6.5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .upbutton {
+    left: 14%;
+  }
+}
+@media (min-width: 2560px) {
+  .upbutton {
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) and (orientation: landscape) {
   .rotate-device {
     position: fixed;
     display: flex;

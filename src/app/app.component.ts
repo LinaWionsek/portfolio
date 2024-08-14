@@ -22,4 +22,10 @@ export class AppComponent {
   ngOnInit() {
     this.translate.use('en');
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.location.hash = '';
+  }
+
 }
