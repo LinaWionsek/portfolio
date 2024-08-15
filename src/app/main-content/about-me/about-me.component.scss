@@ -48,7 +48,6 @@ section {
 }
 
 .description-container {
- 
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,6 +106,14 @@ section {
   section {
     margin: 0px 50px 50px 50px;
   }
+  .work-together-container {
+    gap: 20px;
+  }
+  .description-container {
+    > span {
+      width: auto;
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -126,7 +133,6 @@ section {
     margin-top: -20px !important;
   }
   .description-container {
-    width: auto;
     font-size: 16px;
   }
   .btn {
