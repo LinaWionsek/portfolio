@@ -11,6 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
+
 export class AppComponent {
   title = 'portfolio';
 
@@ -27,5 +28,4 @@ export class AppComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     window.location.hash = '';
   }
-
 }

@@ -3,8 +3,7 @@ import {
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter} from '@angular/router';
-
+import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import {
   provideHttpClient,
@@ -22,9 +21,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(withInterceptorsFromDi()),
-    provideRouter(
-      routes,
-    ),
+    provideRouter(routes),
     importProvidersFrom([
       TranslateModule.forRoot({
         loader: {
@@ -33,7 +30,7 @@ export const appConfig: ApplicationConfig = {
           deps: [HttpClient],
         },
         defaultLanguage: 'en',
-      })
+      }),
     ]),
   ],
 };
