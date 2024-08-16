@@ -30,9 +30,8 @@ h2 {
 
 form {
   width: 617px;
-  display: flex;
+  @include dFlex(center, center);
   flex-direction: column;
-  align-items: center;
 }
 
 input[type="text"],
@@ -107,11 +106,9 @@ textarea {
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 .contact-container {
-  display: flex;
-  justify-content: space-between;
+  @include dFlex(space-between, flex-start, 28px);
   margin-top: 100px;
   padding-bottom: 100px;
-  gap: 28px;
   z-index: 2;
   > div {
     display: flex;
@@ -131,9 +128,7 @@ textarea {
 /* ---------------------------------------------------------------------------------------------------------------- */
 .checkbox-with-policy {
   width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  @include dFlex(flex-start, center, 8px);
   margin-bottom: 4px;
 
   &:hover {
@@ -150,7 +145,6 @@ textarea {
         text-decoration: underline;
         font-weight: bold;
       }
-   
     }
   }
 }
@@ -168,14 +162,10 @@ textarea {
   }
 }
 
-
 .checkbox-container {
   height: 21px;
   width: 21px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  @include dFlex(center, center);
   &:hover {
     background-color: #ffd6d6;
     border-radius: 36px;
@@ -184,23 +174,16 @@ textarea {
 }
 
 input[type="checkbox"] {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
-  /* Remove most all native input styles */
   appearance: none;
-  /* For iOS < 15 */
   background-color: transparent;
-  /* Not removed via appearance */
   margin: 0;
-
   font: inherit;
   color: currentColor;
   width: 18px;
   height: 18px;
   border: 2px solid $red;
   border-radius: 2px;
-  // transform: translateY(-0.075em);
-
   display: grid;
   place-content: center;
   &:hover {
@@ -304,14 +287,15 @@ input[type="checkbox"]:checked::before {
     background: url("../../../../public/img/upbutton_unfilled.png") no-repeat;
   }
 }
+
 .ellipse-container {
   position: absolute;
 }
+
 .ellipse-12 {
   height: 204px;
   width: 204px;
   position: relative;
-  // bottom: -421px;
   bottom: -501px;
   right: -132px;
 }
@@ -325,9 +309,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .notification-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include dFlex(center, center);
   position: relative;
   font-family: $montserratFont;
   font-size: 16px;
@@ -353,33 +335,31 @@ input[type="checkbox"]:checked::before {
 
 @keyframes slide-in {
   0% {
-      transform: translateX(400%);
+    transform: translateX(400%);
   }
-
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-out {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
-
   100% {
-      transform: translateX(400%);
+    transform: translateX(400%);
   }
 }
-
 
 @media (max-width: 1350px) {
   .ellipse-12 {
     right: -92px;
   }
+
   .ellipse-13 {
     right: -802px;
-    // bottom: -481px;
   }
+
   .notification-box {
     top: calc(460% + 560px);
   }
@@ -390,10 +370,12 @@ input[type="checkbox"]:checked::before {
     padding: 50px;
   }
 }
+
 @media (max-width: 1180px) {
   .ellipse-12 {
     bottom: -491px;
   }
+
   .ellipse-13 {
     right: -712px;
   }
@@ -405,6 +387,7 @@ input[type="checkbox"]:checked::before {
     right: -62px;
     bottom: -501px;
   }
+
   .ellipse-13 {
     scale: 0.8;
     right: -632px;
@@ -417,6 +400,7 @@ input[type="checkbox"]:checked::before {
     right: -462px;
     bottom: -261px;
   }
+
   .ellipse-13 {
     scale: 0.8;
     right: -532px;
@@ -442,6 +426,7 @@ input[type="checkbox"]:checked::before {
       width: 100%;
     }
   }
+
   input[type="text"],
   input[type="email"] {
     width: 100%;
@@ -451,6 +436,7 @@ input[type="checkbox"]:checked::before {
     min-width: 340px;
     width: 100%;
   }
+
   .contact-container {
     flex-direction: column;
     margin-top: 0;
@@ -459,9 +445,11 @@ input[type="checkbox"]:checked::before {
       gap: 12px;
     }
   }
+
   .form-fields {
     margin-top: 50px;
   }
+
   .upbutton {
     margin-top: 743px;
     margin-left: 0px;
@@ -472,32 +460,31 @@ input[type="checkbox"]:checked::before {
     right: -302px;
     bottom: -371px;
   }
+
   .ellipse-13 {
     scale: 0.8;
     right: -392px;
-    // bottom: -631px;
     bottom: -691px;
   }
 }
+
 @media (max-width: 720px) {
   .ellipse-12 {
     right: -192px;
     bottom: -391px;
   }
+
   .ellipse-13 {
     right: -282px;
   }
 }
 
 @media (max-width: 640px) {
-  .ellipse-12 {
-    // right: -192px;
-    // bottom: -361px;
-  }
   .ellipse-13 {
     right: -232px;
     bottom: -691px;
   }
+
   .upbutton {
     margin-top: 803px;
   }
@@ -507,16 +494,18 @@ input[type="checkbox"]:checked::before {
   .ellipse-12 {
     right: -162px;
   }
+
   .ellipse-13 {
     right: -152px;
-    // bottom: -681px;
     bottom: -795px;
   }
+
   .warning-text {
     background-color: white;
     padding: 2px;
     border-radius: 2px;
   }
+
   .contact-container {
     padding-bottom: 150px;
   }
@@ -526,6 +515,7 @@ input[type="checkbox"]:checked::before {
   .ellipse-12 {
     right: -112px;
   }
+
   .ellipse-13 {
     right: -112px;
   }
@@ -537,11 +527,12 @@ input[type="checkbox"]:checked::before {
     right: -82px;
     bottom: -401px;
   }
+
   .ellipse-13 {
     scale: 0.7;
     right: -92px;
-    // bottom: -711px;
   }
+
   .upbutton {
     margin-top: 813px;
   }
@@ -551,14 +542,15 @@ input[type="checkbox"]:checked::before {
   textarea {
     min-width: 200px;
   }
+
   .ellipse-12 {
     bottom: -431px;
   }
+
   .ellipse-13 {
     right: -41px;
-
-    // bottom: -751px;
   }
+
   .contact-container {
     padding-bottom: 150px;
   }
@@ -568,20 +560,20 @@ input[type="checkbox"]:checked::before {
   section {
     padding: 10px;
   }
+
   .ellipse-12 {
     scale: 0.5;
     right: -65px;
     bottom: -413px;
   }
+
   .ellipse-13 {
     scale: 0.6;
     right: -27px;
-    // bottom: -781px;
-  }
-  .upbutton {
-    margin-top: 853px;
-    // margin-top: 953px;
-    gap: 0;
   }
 
+  .upbutton {
+    margin-top: 853px;
+    gap: 0;
+  }
 }
