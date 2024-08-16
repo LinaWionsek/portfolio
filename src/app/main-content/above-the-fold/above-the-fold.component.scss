@@ -24,38 +24,33 @@ section {
   .ellipse1 {
     position: relative;
     margin-top: -120px;
-    // height: 800px;
-    // width: 600px;
     height: 750px;
     width: 650px;
   }
+
   .ellipse-mobile {
     display: none;
   }
+
   .profile-picture {
     position: absolute;
     bottom: 0;
-    // height: 900px;
     left: 100px;
   }
 }
 
 .right {
-  display: flex;
+  @include dFlex(space-between, center);
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   text-align: start;
   margin-right: 100px;
   padding-top: 50px;
-  //   gap: -20px;
 }
 
 .main-headline {
   display: flex;
   flex-direction: column;
   margin: 0;
-  //   font-size: 128px;
   font-weight: 800;
   font-family: $balooFont;
   color: $red;
@@ -73,14 +68,12 @@ section {
 }
 
 .scroll-container {
-  display: flex;
+  @include dFlex(center, center);
   flex-direction: column;
-  align-items: center;
   font-family: $montserratFont;
   color: $red;
   font-weight: 500;
   font-size: 23px;
-
   img {
     margin-bottom: -7px;
   }
@@ -92,12 +85,11 @@ section {
 }
 
 .socialmedia-icons {
-  display: flex;
+  @include dFlex(center, center, 25px);
   flex-direction: column;
   position: relative;
   right: -250px;
   bottom: -85px;
-  gap: 25px;
   height: fit-content;
   img {
     width: 40px;
@@ -107,12 +99,14 @@ section {
     }
   }
 }
+
 @media (max-width: 1366px) {
   section {
     h1 {
       font-size: 44px;
     }
   }
+
   .frontend {
     line-height: 133px;
     font-size: 108px;
@@ -124,29 +118,26 @@ section {
     margin-top: -40px;
   }
 }
+
 @media (max-width: 1280px) {
   section {
     h1 {
       font-size: 44px;
     }
   }
+
   .img-container {
     .ellipse1 {
       height: 750px;
       width: 550px;
-      // height: 650px;
-      // width: 450px;
     }
     .profile-picture {
       position: absolute;
       bottom: 0;
-      // height: 800px;
-      // left: 120px;
     }
   }
 
   .right {
-    // z-index: 1;
     margin-right: 50px;
   }
 
@@ -160,29 +151,31 @@ section {
     font-size: 98px;
     margin-top: -40px;
   }
+
   .socialmedia-icons {
     right: -160px;
   }
 }
+
 @media (max-width: 1150px) {
   .img-container {
     .ellipse1 {
       height: 700px;
       width: 500px;
-      // height: 650px;
-      // width: 450px;
     }
+
     .profile-picture {
       position: absolute;
       bottom: 0;
       left: 40px;
-      // height: 700px;
     }
   }
+
   .frontend {
     line-height: 123px;
     font-size: 98px;
   }
+
   .developer {
     line-height: 112px;
     font-size: 88px;
@@ -207,6 +200,7 @@ section {
     font-size: 67px;
     margin-top: -20px;
   }
+
   .socialmedia-icons {
     right: -100px;
   }
@@ -219,25 +213,7 @@ section {
     }
   }
 }
-// @media (max-width: 850px) {
-//   .img-container {
-//     .ellipse1 {
-//     margin-left: -30px
-//     }
-//   }
-// }
 
-// @media (max-width: 810px) {
-//   .img-container {
-//     .ellipse1 {
-//       height: 550px;
-//       width: 350px;
-//     }
-//     .profile-picture {
-//       height: 660px;
-//     }
-//   }
-// }
 @media (max-width: 900px) {
   .ellipse-mobile {
     position: absolute;
@@ -275,8 +251,6 @@ section {
     .profile-picture {
       position: absolute;
       bottom: 0;
-      // height: 660px;
-      // left: 40px;
       height: 590px;
       left: 90px;
     }
@@ -313,7 +287,6 @@ section {
       scale: 1.5;
     }
     .profile-picture {
-      // left: -10px;
       left: 50px;
     }
   }
@@ -325,13 +298,13 @@ section {
       scale: 1.3;
     }
     .profile-picture {
-      // left: -70px;
       left: 10px;
       scale: 0.9;
       margin-bottom: -33px;
     }
   }
 }
+
 @media (max-width: 450px) {
   .img-container {
     .ellipse-mobile {
@@ -339,6 +312,7 @@ section {
     }
   }
 }
+
 @media (max-width: 420px) {
   section {
     h1 {
@@ -351,9 +325,6 @@ section {
       scale: 1;
     }
     .profile-picture {
-      // scale: 0.8;
-      // margin-bottom: -65px;
-      // left: -100px;
       left: -20px;
     }
   }
@@ -369,6 +340,7 @@ section {
     margin-top: -20px;
   }
 }
+
 @media (max-width: 400px) {
   .img-container {
     .ellipse-mobile {
@@ -388,12 +360,14 @@ section {
     }
   }
 }
+
 @media (max-width: 360px) {
   section {
     h1 {
       font-size: 28px;
     }
   }
+
   .img-container {
     .ellipse-mobile {
       scale: 0.82;
@@ -401,14 +375,12 @@ section {
       margin-top: -173px;
     }
     .profile-picture {
-      // scale: 0.55;
-      // bottom: -86px;
-      // left: -110px;
       scale: 0.8;
-        bottom: -25px;
-        left: -46px;
+      bottom: -25px;
+      left: -46px;
     }
   }
+
   .right {
     margin-left: 10px;
     margin-right: 10px;
