@@ -15,9 +15,7 @@ span {
 }
 
 .main-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include dFlex(space-between, center);
   margin-top: 100px;
   margin-bottom: 30px;
 }
@@ -41,8 +39,7 @@ span {
 }
 
 .footer-right {
-  display: flex;
-  justify-content: space-between;
+  @include dFlex(space-between, center);
   width: 242px;
   img {
     height: 30px;
@@ -57,14 +54,11 @@ span {
 
 .social-media-icon {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  @include dFlex(center, center);
 }
 
 .impressum-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include dFlex(center, center);
   width: 100%;
   height: 30px;
   a {
@@ -126,7 +120,6 @@ span {
     justify-content: center;
   }
 }
-
 
 @media (max-width: 360px) {
   section {
