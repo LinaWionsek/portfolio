@@ -15,9 +15,9 @@ export class ProjectsComponent {
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    console.log(this.translate.currentLang);
+  
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      console.log(event.lang);
+    
       if (this.translate.currentLang == 'en') {
         this.englishLang = true;
       } else {

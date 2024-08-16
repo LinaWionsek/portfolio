@@ -20,9 +20,9 @@ export class HeaderComponent {
 
 
   ngOnInit(): void {
-    console.log(this.translate.currentLang);
+   
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      console.log(event.lang);
+   
       if (this.translate.currentLang == 'en') {
         this.englishLang = true;
       } else {
