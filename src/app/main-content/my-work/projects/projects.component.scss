@@ -1,8 +1,7 @@
 @import "../../../../styles.scss";
 .content {
-  display: flex;
+  @include dFlex(center, center, 35px);
   flex-direction: column;
-  gap: 35px;
 }
 
 .project-container {
@@ -99,9 +98,7 @@
 }
 
 @media (max-width: 900px) {
-  // .content {
-  //   align-items: center;
-  // }
+
   .project-container {
     flex-direction: column !important;
     align-items: center;
