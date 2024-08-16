@@ -4,9 +4,11 @@
   width: 1440px;
   overflow: hidden;
 }
+
 .rotate-device {
   display: none;
 }
+
 :host {
   display: flex;
   justify-content: center;
@@ -36,6 +38,7 @@
     left: 6.5%;
   }
 }
+
 @media (min-width: 1600px) {
   .upbutton {
     bottom: 2%;
@@ -48,6 +51,7 @@
     left: 14%;
   }
 }
+
 @media (min-width: 2560px) {
   .upbutton {
     left: 23%;

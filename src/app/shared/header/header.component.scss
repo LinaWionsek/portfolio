@@ -148,9 +148,11 @@ hr {
   nav {
     margin: 0px 50px;
   }
+
   .nav-links {
     gap: 18px;
   }
+
   .language {
     left: 500px;
   }
@@ -160,6 +162,7 @@ hr {
   .nav-links {
     gap: 8px;
   }
+
   .language {
     left: 480px;
   }
@@ -169,11 +172,13 @@ hr {
   .burger-menu {
     display: block;
   }
+
   nav {
     height: 120px;
     margin: 0px 25px;
     @include dFlex(space-between, center);
   }
+  
   .menu-container {
     display: none;
   }

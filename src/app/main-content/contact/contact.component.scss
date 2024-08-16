@@ -103,8 +103,6 @@ textarea {
   margin-top: 16px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
-
 .contact-container {
   @include dFlex(space-between, flex-start, 28px);
   margin-top: 100px;
@@ -125,12 +123,11 @@ textarea {
 .red {
   color: $red;
 }
-/* ---------------------------------------------------------------------------------------------------------------- */
+
 .checkbox-with-policy {
   width: 100%;
   @include dFlex(flex-start, center, 8px);
   margin-bottom: 4px;
-
   &:hover {
     cursor: context-menu;
     .checkbox-container {
@@ -138,7 +135,6 @@ textarea {
       border-radius: 36px;
       cursor: pointer;
     }
-
     .consent-statement {
       a {
         color: $red;
@@ -207,7 +203,6 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
-/* ---------------------------------------------------------------------------------------------------------------- */
 
 .warning-text {
   color: $red;
@@ -264,7 +259,6 @@ input[type="checkbox"]:checked::before {
     position: 100%;
     size: 400%;
   }
-
   &:hover {
     border: none;
     transition: background 300ms ease-in-out;
@@ -394,6 +388,7 @@ input[type="checkbox"]:checked::before {
     bottom: -621px;
   }
 }
+
 @media (max-width: 1000px) {
   .ellipse-12 {
     scale: 0.7;
