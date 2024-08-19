@@ -3,26 +3,23 @@
         <img src="/img/ellipse12.png" class="ellipse-12" alt="">
         <img src="/img/ellipse13.png" class="ellipse-13" alt="">
     </div>
-
     <div>
         <h1>{{ 'contact' | translate }}</h1>
     </div>
-
     <div class="contact-container">
         <div>
             <h2> {{ 'contact-title' | translate }}</h2>
             <span>{{ 'contact-description' | translate }}</span>
             <span class="red">{{ 'contact-cta-1' | translate }} <b>{{ 'contact-cta-2' | translate }}</b></span>
         </div>
-        <!-- <div (click)="scrollToTop()" class="upbutton"></div> -->
-
-        <!-- <div class="container"> -->
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div>
                 <div class="form-fields">
                     <div>
                         <label for="name"></label>
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" minlength="3" id="name" class="warning"
+
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" minlength="3" id="name"
+                            class="warning"
                             [ngClass]="{'success-icon': name.valid  , 'warning-icon': !name.valid && name.touched}"
                             name="name" placeholder="{{ 'contact-placeholder-1' | translate }}" required>
 
@@ -33,6 +30,7 @@
                     </div>
                     <div>
                         <label for="email"></label>
+
                         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
                             [ngClass]="{'success-icon': email.valid  , 'warning-icon': !email.valid && email.touched}"
                             name="email" placeholder="{{ 'contact-placeholder-2' | translate }}" required
@@ -43,9 +41,9 @@
                         }
 
                     </div>
-
                     <div>
                         <label for="message"></label>
+
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
                             [ngClass]="{'success-icon-message': message.valid  , 'warning-icon-message': !message.valid && message.touched}"
                             name="message" placeholder="{{ 'contact-placeholder-3' | translate }}" style="height:200px"
@@ -57,16 +55,15 @@
 
                     </div>
                 </div>
-
                 <div class="checkbox-with-policy mt-16">
                     <div class="checkbox-container">
+
                         <input #checkbox="ngModel" [(ngModel)]="contactData.checked" name="myCheckbox" type="checkbox"
                             id="checkbox_id" (change)="onChange($event)" required>
+
                     </div>
                     <span class="consent-statement">{{ 'acknowledgment-1' | translate }}
-
                         <a routerLink="/privacy-policy">{{ 'acknowledgment-2' | translate }}</a>
-
                         {{ 'acknowledgment-3' | translate }}</span>
                 </div>
 
@@ -74,40 +71,12 @@
                 <span class="warning-text"> {{ 'warning-text-acknowledgment' | translate }}</span>
                 }
 
-
-
             </div>
-
 
             <input [ngClass]="{'btn-disabled': !contactForm.valid, 'btn-success': contactForm.valid}" type="submit"
                 class="submit-button" value="{{ 'acknowledgment-button' | translate }}" [disabled]="!contactForm.valid">
 
-
-
-
-
-            <!--             
-                <div class="checkbox-with-policy mt-16">
-                    <label class="checkbox-container">
-                        <input name="myCheckbox" type="checkbox" id="checkbox_id" (change)="onChange($event)" required>
-                      
-                    </label>
-                    <span>I've read the <div class="privacy-link"><a>privacy policy</a></div> and agree to the
-                        processing of
-                        my data as outlined.</span>
-                </div> -->
-
-
-
-
-
-
         </form>
-
-
-
     </div>
-
     <div class="notification-box d-none" id="success_info_container"> Message succesfully sent</div>
-
 </section>

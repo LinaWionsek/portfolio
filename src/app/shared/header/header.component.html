@@ -5,11 +5,9 @@
         </div>
         <div class="menu-container">
             <div class="nav-links">
-             
                 <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a>
                 <a (click)="scrollTo('my_skills')">{{ 'header-skills' | translate }}</a>
                 <a (click)="scrollTo('my_work')">{{ 'header-work' | translate }}</a>
-               
             </div>
             <div class="language">
                 <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
@@ -19,7 +17,6 @@
         </div>
         <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()" alt="">
     </nav>
-
     <div class="dialog" [ngClass]="{'show': show, 'hide': !show}">
         <div class="dialog-header">
             <a href="" class="logo">
@@ -29,14 +26,9 @@
         </div>
         <div class="dialog-links">
             <a (click)="scrollTo('about_me')" (click)="closeDialog()">{{ 'header-about' | translate }}</a>
-            <a (click)="scrollTo('my_skills')"(click)="closeDialog()">{{ 'header-skills' | translate }}</a>
+            <a (click)="scrollTo('my_skills')" (click)="closeDialog()">{{ 'header-skills' | translate }}</a>
             <a (click)="scrollTo('my_work')" (click)="closeDialog()">{{ 'header-work' | translate }}</a>
             <a (click)="scrollTo('contact')" (click)="closeDialog()">{{ 'contact' | translate }}</a>
-
-            <!-- <a (click)="closeDialog()" href="#about_me">{{ 'header-about' | translate }}</a>
-            <a (click)="closeDialog()" href="#my_skills">{{ 'header-skills' | translate }}</a>
-            <a (click)="closeDialog()" href="#my_work">{{ 'header-work' | translate }}</a>
-            <a (click)="closeDialog()" href="#contact">{{ 'contact' | translate }}</a>  -->
             <div class="language-mobile">
                 <div>
                     <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
