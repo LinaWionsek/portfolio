@@ -32,9 +32,19 @@
   }
 }
 
+@media (max-width: 900px) {
+  .upbutton {
+    &:hover {
+      cursor: pointer;
+      box-shadow: none;
+      transform: scale(1.08);
+    }
+  }
+}
+
 @media (min-width: 1536px) {
   .upbutton {
-    bottom: 5%;
+    bottom: 2%;
     left: 6.5%;
   }
 }
@@ -46,28 +56,41 @@
   }
 }
 
+@media (min-width: 1700px) {
+  .upbutton {
+    left: 24%;
+  }
+}
+
 @media (min-width: 1920px) {
   .upbutton {
     left: 14%;
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
   .upbutton {
-    left: 23%;
+    left: 24%;
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 2560px) and (max-width: 2600px) {
   .upbutton {
-    &:hover {
-      cursor: pointer;
-      box-shadow: none;
-      transform: scale(1.08);
-    }
+    left: 25%;
   }
 }
 
+@media (min-width: 2600px) {
+  .upbutton {
+    left: 25%;
+  }
+}
+
+@media (min-width: 3000px) {
+  .upbutton {
+    left: 32%;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 960px) and (orientation: landscape) {
   .rotate-device {
     position: fixed;

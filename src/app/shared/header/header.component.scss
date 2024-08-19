@@ -91,7 +91,7 @@ hr {
   right: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #ffffff, #ffeaea);
-  @include dFlex(flex-start, center, 150px);
+  @include dFlex(flex-start, center, 100px);
   flex-direction: column;
   z-index: 5;
   padding: 25px;
