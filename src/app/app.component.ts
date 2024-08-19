@@ -11,19 +11,32 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-
 export class AppComponent {
   title = 'portfolio';
 
+  /**
+   * Initializes the TranslateService and sets the available languages.
+   *
+   * @param {TranslateService} translate - the TranslateService instance
+   * @return {void}
+   */
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('en');
   }
 
+  /**
+   * Initializes the component and sets the default language to English.
+   *
+   */
   ngOnInit() {
     this.translate.use('en');
   }
 
+  /**
+   * Scrolls the window to the top of the page with a smooth animation and removes any URL hash.
+   *
+   */
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     window.location.hash = '';
