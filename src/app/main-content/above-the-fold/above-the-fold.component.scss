@@ -37,6 +37,13 @@ section {
     bottom: 0;
     left: 100px;
   }
+  .ellipse-big {
+    display: none;
+    position: relative;
+    margin-top: -120px;
+    height: 750px;
+    width: 650px;
+  }
 }
 
 .right {
@@ -99,7 +106,23 @@ section {
     }
   }
 }
-
+@media (min-width: 2300px) {
+  .img-container {
+    .ellipse1 {
+      display: none;
+    }
+  
+    .ellipse-big {
+      display: block;
+      position: relative;
+      margin-top: -170px;
+      margin-left: -150px;
+      height: 800px;
+      width: 800px;
+    }
+  }
+  
+}
 @media (max-width: 1366px) {
   section {
     h1 {

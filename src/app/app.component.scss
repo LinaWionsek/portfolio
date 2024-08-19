@@ -73,7 +73,12 @@
     left: 24%;
   }
 }
-
+@media (min-width: 2300px) {
+  .max-width {
+    width: 1440px;
+    overflow: visible;
+  }
+}
 @media (min-width: 2560px) and (max-width: 2600px) {
   .upbutton {
     left: 25%;
