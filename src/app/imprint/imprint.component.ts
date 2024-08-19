@@ -6,13 +6,16 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
   constructor(private location: Location) {}
 
-  goBack(){
+  /**
+   * Navigates back to the previous page in the browser history.
+   *
+   */
+  goBack() {
     this.location.back();
   }
- 
 }
