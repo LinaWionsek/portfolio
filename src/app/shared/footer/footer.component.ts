@@ -7,9 +7,14 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [RouterLink, TranslateModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
+
+  /**
+   * Scrolls the window to the top of the page with a smooth animation.
+   *
+   */
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
