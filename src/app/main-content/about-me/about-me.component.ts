@@ -9,6 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
+  
+  /**
+   * Scrolls the page to the contact form.
+   *
+   */
   scrollToContactForm() {
     window.location.href = '#contact';
   }
