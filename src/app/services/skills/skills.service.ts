@@ -1,13 +1,20 @@
 import { Injectable } from '@angular/core';
 
+/**
+ * Service to provide a list of skills with images and names.
+ *
+ * This service is provided in the root and can be injected into
+ * any component or other service that requires access to the skills list.
+ */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SkillsService {
+  constructor() {}
 
-  constructor() { }
-
-
+  /**
+   * Array of skill objects.
+   */
   skills = [
     {
       img: 'angular.png',
@@ -50,5 +57,4 @@ export class SkillsService {
       name: 'Material design',
     },
   ];
-
 }
