@@ -7,10 +7,12 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+  styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent {
-
+  
+  /**
+   * Injects the SkillsService to access skill data.
+   */
   skillsservice = inject(SkillsService);
-
 }
