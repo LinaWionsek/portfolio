@@ -14,11 +14,11 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
   http = inject(HttpClient);
-
-  onChange(event: Event): void {
-    console.log((event.target as HTMLInputElement).checked);
-  }
-
+  
+  /**
+   * Represents the data collected from a contact form.
+   * @type {ContactData}
+   */
   contactData = {
     name: '',
     email: '',
@@ -28,6 +28,10 @@ export class ContactComponent {
 
   mailTest = false;
 
+  /**
+   * Configuration for POST request to send mail.
+   * @type {PostConfig}
+   */
   post = {
     endPoint: 'https://lina-wionsek.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -39,9 +43,14 @@ export class ContactComponent {
     },
   };
 
+  /**
+   * Handles form submission by sending a POST request to the specified endpoint.
+   *
+   * @param {NgForm} ngForm - The form object containing submission data and validation status.
+   * @return {void}
+   */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      // debugger;
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -60,13 +69,19 @@ export class ContactComponent {
     }
   }
 
+  /**
+   * Scrolls the window to the top of the page with a smooth animation and removes any URL hash.
+   *
+   */
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     window.location.hash = '';
   }
 
-
-
+  /**
+   * Triggers a slide-in animation on the success info container element.
+   *
+   */
   changesSaved() {
     let slideInAnimation = document.getElementById('success_info_container');
     if (slideInAnimation) {
