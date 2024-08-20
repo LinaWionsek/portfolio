@@ -136,11 +136,12 @@
     color: white;
     background-color: $darkred;
     font-family: $montserratFont;
+    transition: all 300ms;
     font-size: 23px;
     margin-top: 30px;
     padding: 12px;
     background: {
-      image: linear-gradient(45deg, $red 50%, $darkred 50%, transparent 50%);
+      image: linear-gradient(120deg, $red 60%, $darkred 60%, transparent 60%);
       position: 100%;
       size: 400%;
     }
@@ -153,10 +154,10 @@
       color: white;
       cursor: pointer;
       background-image: linear-gradient(
-        45deg,
-        darken($red, 10%) 50%,
-        darken($darkred, 10%) 50%,
-        transparent 50%
+        120deg,
+        darken($red, 10%) 60%,
+        darken($darkred, 10%) 60%,
+        transparent 60%
       );
     }
   }
