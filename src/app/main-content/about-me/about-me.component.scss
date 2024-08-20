@@ -81,16 +81,16 @@ section {
   transition: all 300ms;
   font-family: $montserratFont;
   background: {
-    image: linear-gradient(120deg, $red 50%, $darkred 50%, transparent 40%);
+    image: linear-gradient(120deg, $red 60%, $darkred 60%, transparent 60%);
+    border: 2px solid $red;
     position: 100%;
     size: 400%;
-    top: 20;
   }
 
   &:hover {
     border: none;
     transition: background 300ms ease-in-out;
-    transform: scale(1.08);
+    transform: scale(1.09);
     background-position: 0;
     color: white;
     cursor: pointer;
