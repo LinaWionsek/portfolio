@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'portfolio';
-
+  
   /**
    * Initializes the TranslateService and sets the available languages.
    *
@@ -31,6 +32,7 @@ export class AppComponent {
    */
   ngOnInit() {
     this.translate.use('en');
+    AOS.init();
   }
 
   /**
