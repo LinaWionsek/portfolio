@@ -9,12 +9,16 @@ nav {
   margin: 0px 100px;
   @include dFlex(space-between, center);
 }
-
+.menu-container {
+  height: 100%;
+}
 .nav-links {
   font-family: $montserratFont;
   font-size: 23px;
   display: flex;
+  align-items: center;
   gap: 36px;
+  height: 100%;
   > a {
     width: 150px;
     text-decoration: none;
@@ -29,9 +33,11 @@ nav {
 
 .logo {
   z-index: 5;
+  height: 80px;
+  width: 80px;
+  padding-top: 1px;
   > img {
-    height: 80px;
-    width: 80px;
+   height: 100%
   }
 }
 
@@ -42,7 +48,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   position: relative;
   left: 560px;
-  bottom: 23px;
+  // bottom: 23px;
+  bottom: 78px;
   a {
     color: $red;
     text-decoration: none;
@@ -178,7 +185,7 @@ hr {
     margin: 0px 25px;
     @include dFlex(space-between, center);
   }
-  
+
   .menu-container {
     display: none;
   }
