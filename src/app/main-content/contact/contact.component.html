@@ -22,10 +22,11 @@
                             class="warning"
                             [ngClass]="{'success-icon': name.valid  , 'warning-icon': !name.valid && name.touched}"
                             name="name" placeholder="{{ 'contact-placeholder-1' | translate }}" required>
-
-                        @if (!name.valid && name.touched){
-                        <span class="warning-text">{{ 'warning-text-name' | translate }}</span>
-                        }
+                        <div class="warning-field">
+                            @if (!name.valid && name.touched){
+                            <span class="warning-text">{{ 'warning-text-name' | translate }}</span>
+                            }
+                        </div>
 
                     </div>
                     <div>
@@ -35,10 +36,11 @@
                             [ngClass]="{'success-icon': email.valid  , 'warning-icon': !email.valid && email.touched}"
                             name="email" placeholder="{{ 'contact-placeholder-2' | translate }}" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-
-                        @if (!email.valid && email.touched){
-                        <span class="warning-text">{{ 'warning-text-mail' | translate }}</span>
-                        }
+                        <div class="warning-field">
+                            @if (!email.valid && email.touched){
+                            <span class="warning-text">{{ 'warning-text-mail' | translate }}</span>
+                            }
+                        </div>
 
                     </div>
                     <div>
@@ -48,10 +50,12 @@
                             [ngClass]="{'success-icon-message': message.valid  , 'warning-icon-message': !message.valid && message.touched}"
                             name="message" placeholder="{{ 'contact-placeholder-3' | translate }}" style="height:200px"
                             required></textarea>
+                        <div class="warning-field">
+                            @if (!message.valid && message.touched){
+                            <span class="warning-text">{{ 'warning-text-message' | translate }}</span>
+                            }
+                        </div>
 
-                        @if (!message.valid && message.touched){
-                        <span class="warning-text">{{ 'warning-text-message' | translate }}</span>
-                        }
 
                     </div>
                 </div>
@@ -66,10 +70,11 @@
                         <a routerLink="/privacy-policy">{{ 'acknowledgment-2' | translate }}</a>
                         {{ 'acknowledgment-3' | translate }}</span>
                 </div>
-
-                @if (!checkbox.valid && checkbox.touched){
-                <span class="warning-text"> {{ 'warning-text-acknowledgment' | translate }}</span>
-                }
+                <div class="warning-field">
+                    @if (!checkbox.valid && checkbox.touched){
+                    <span class="warning-text"> {{ 'warning-text-acknowledgment' | translate }}</span>
+                    }
+                </div>
 
             </div>
 

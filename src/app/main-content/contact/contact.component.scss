@@ -84,11 +84,15 @@ textarea {
   min-width: 617px;
   margin-bottom: 4px;
 }
-
+.warning-field {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
 .form-fields {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 16px;
 }
 
 .d-none {
