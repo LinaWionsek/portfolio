@@ -4,7 +4,7 @@ section {
   background-color: $red;
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 50px 100px;
   font-family: $montserratFont;
   color: white;
   background: linear-gradient(to right, $red, #de0000);
@@ -17,7 +17,7 @@ span {
 
 .main-content {
   @include dFlex(space-between, center);
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -110,7 +110,9 @@ span {
   }
   .main-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .logo-container {
