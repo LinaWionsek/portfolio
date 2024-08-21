@@ -2,9 +2,19 @@
 
 .max-width {
   width: 1440px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
+
+
+
+
+.wrapper {
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .rotate-device {
   display: none;
 }

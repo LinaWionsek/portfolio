@@ -1,10 +1,11 @@
 @import "../../../styles.scss";
 
 section {
-  background-color: $red;
+ 
   padding: 100px;
   @include dFlex(center, center, 50px);
   flex-direction: column;
+  width: 1440px;
 }
 
 h1 {
@@ -13,7 +14,12 @@ h1 {
   font-family: $balooFont;
   color: white;
 }
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: $red;
+}
 .skills-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

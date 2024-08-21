@@ -1,10 +1,9 @@
 @import "../../../styles.scss";
 
 section {
-  background: linear-gradient(to bottom, #ffffff, #ffeaea);
   height: calc(100vh - 120px);
   // max-height: calc(1600px - 120px);
-  width: 100%;
+  width: 1440px;
   display: flex;
   justify-content: space-between;
 
@@ -16,6 +15,13 @@ section {
     font-family: $montserratFont;
     color: $red;
   }
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
 }
 
 .img-container {
@@ -111,7 +117,7 @@ section {
     .ellipse1 {
       display: none;
     }
-  
+
     .ellipse-big {
       display: block;
       position: relative;
@@ -121,7 +127,6 @@ section {
       width: 800px;
     }
   }
-  
 }
 @media (max-width: 1366px) {
   section {

@@ -1,18 +1,24 @@
 @import "../../../styles.scss";
 
 section {
-  background-color: $red;
   display: flex;
   flex-direction: column;
   padding: 50px 100px;
   font-family: $montserratFont;
   color: white;
-  background: linear-gradient(to right, $red, #de0000);
+  width: 1440px;
 }
 
 span {
   font-size: 23px;
   height: 30px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to right, $red, #de0000);
 }
 
 .main-content {

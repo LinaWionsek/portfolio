@@ -1,8 +1,8 @@
 @import "../../../styles.scss";
 
 section {
-  margin: 100px;
-  padding: 45px 0 45px 0;
+  padding: 145px 100px 145px 100px;
+  width: 1440px;
 }
 
 h1 {
@@ -17,6 +17,11 @@ span {
   font-family: $montserratFont;
   font-size: 23px;
   display: block;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .introduction {

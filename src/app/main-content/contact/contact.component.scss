@@ -6,8 +6,8 @@
 }
 
 section {
-  background: linear-gradient(to bottom, #ffffff, #ffeaea);
-  width: 100%;
+ 
+  width: 1440px;
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -84,6 +84,14 @@ textarea {
   min-width: 617px;
   margin-bottom: 4px;
 }
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
+}
+
 .warning-field {
   height: 20px;
   display: flex;

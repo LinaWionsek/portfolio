@@ -3,9 +3,14 @@
 section {
   @include dFlex(center, center);
   flex-direction: column;
-  margin: 0px 100px 100px 100px;
+  padding: 0px 100px 100px 100px;
+  width: 1440px;
 }
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .work-together-container {
   @include dFlex(space-between, flex-start);
   width: 100%;
