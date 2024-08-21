@@ -28,6 +28,7 @@ section {
   display: flex;
   position: relative;
   .ellipse1 {
+    display: none;
     position: relative;
     margin-top: -120px;
     height: 750px;
@@ -44,11 +45,12 @@ section {
     left: 100px;
   }
   .ellipse-big {
-    display: none;
+    display: block;
     position: relative;
-    margin-top: -120px;
-    height: 750px;
-    width: 650px;
+    margin-top: -170px;
+    margin-left: -150px;
+    height: 800px;
+    width: 800px;
   }
 }
 
@@ -112,19 +114,35 @@ section {
     }
   }
 }
-@media (min-width: 2300px) {
+// @media (min-width: 2300px) {
+//   .img-container {
+//     .ellipse1 {
+//       display: none;
+//     }
+//   }
+// }
+@media (max-width: 1800px) {
   .img-container {
-    .ellipse1 {
+    .ellipse-big {
+      scale: 0.9;
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .img-container {
+    .ellipse-big {
+      scale: 0.8;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .img-container {
+    .ellipse-big {
       display: none;
     }
-
-    .ellipse-big {
+    .ellipse1 {
       display: block;
-      position: relative;
-      margin-top: -170px;
-      margin-left: -150px;
-      height: 800px;
-      width: 800px;
     }
   }
 }
