@@ -3,6 +3,7 @@
 section {
   padding: 145px 100px 145px 100px;
   width: 1440px;
+  margin-top: 50px; //for 1st ellipse
 }
 
 h1 {
@@ -62,6 +63,7 @@ span {
 }
 
 .ellipse-6 {
+  display: none;
   left: -100px;
   top: 550px;
 }
@@ -70,10 +72,11 @@ span {
   height: 390px;
   width: 390px;
   left: -260px;
-  top: 560px;
+  top: 500px;
 }
 
 .ellipse-7 {
+  display: none;
   left: 860px;
   top: 860px;
 }
@@ -93,10 +96,46 @@ span {
   left: 30px;
   top: 1724px;
 }
+@media (max-width: 1810px) {
+  .ellipse-7-new {
+    scale: 0.9;
+    left: 790px;
+    top: 820px;
+  }
+}
 
+@media (max-width: 1650px) {
+  .ellipse-7-new {
+    scale: 0.8;
+    left: 700px;
+    // left: 790px;
+    // top: 820px;
+  }
+}
 @media (max-width: 1450px) {
-  .ellipse-7 {
-    left: 757px;
+  // .ellipse-7 {
+  //   display: block;
+  //   left: 757px;
+  // }
+  .ellipse-mobile {
+    display: block;
+    position: absolute;
+    scale: 0.8;
+    left: 640px;
+    top: 840px;
+    // top: 860px;
+  }
+
+  .ellipse-7-new {
+    display: none;
+    // scale: 0.8;
+    // left: 700px;
+  }
+}
+
+@media (max-width: 1440px) {
+  section {
+    width: 100%;
   }
 }
 
@@ -114,17 +153,19 @@ span {
     position: absolute;
     scale: 0.8;
     left: 550px;
-    top: 860px;
+    top: 790px;
+    // top: 860px;
   }
 }
 
 @media (max-width: 1280px) {
   section {
-    margin: 50px;
+    padding: 50px;
+    margin-bottom: 80px; //for last ellipse
   }
 
   .ellipse-4 {
-    top: -42px;
+    top: -2px;
   }
 
   .ellipse-5 {
@@ -135,8 +176,8 @@ span {
     display: block;
     position: absolute;
     scale: 0.8;
-    left: 448px;
-    top: 790px;
+    left: 440px;
+    top: 780px;
   }
 
   .ellipse-7 {
@@ -156,7 +197,12 @@ span {
 }
 
 @media (max-width: 1150px) {
+  .ellipse-4 {
+    scale: 0.9;
+    top: -60px;
+  }
   .ellipse-5 {
+    scale: 0.9;
     left: 640px;
   }
 }
@@ -167,7 +213,7 @@ span {
   }
 
   .ellipse-mobile {
-    left: 220px;
+    left: 320px;
   }
 }
 
@@ -179,11 +225,21 @@ span {
   .ellipse-9 {
     top: 1717px;
   }
+
+  .ellipse-mobile {
+    left: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  .ellipse-mobile {
+    left: 240px;
+  }
 }
 
 @media (max-width: 900px) {
   section {
-    margin: 25px;
+    padding: 50px 25px;
   }
 
   span {
@@ -198,16 +254,18 @@ span {
 
   .ellipse-4 {
     left: 380px;
+    top: -70px;
   }
   .ellipse-5 {
     left: 560px;
-    top: 80px;
+    top: 100px;
   }
-  .ellipse-6 {
-    left: -80px;
-    top: 250px;
-    scale: 0.5;
-  }
+  // .ellipse-6 {
+  //   display: block;
+  //   left: -80px;
+  //   top: 250px;
+  //   scale: 0.5;
+  // }
   .ellipse-7 {
     left: 560px;
     top: 730px;
@@ -224,6 +282,11 @@ span {
   .ellipse-mobile {
     left: 210px;
   }
+  .ellipse-6-new {
+    scale: 0.5;
+    left: 0px;
+    top: 220px;
+  }
 
   .ellipse-4,
   .ellipse-5,
@@ -237,7 +300,6 @@ span {
   @media (max-width: 750px) {
     .ellipse-5 {
       left: 360px;
-      top: 80px;
     }
 
     .ellipse-7 {
@@ -251,9 +313,12 @@ span {
   }
 
   @media (max-width: 600px) {
+    .ellipse-4 {
+      left: 260px;
+      top: -100px;
+    }
     .ellipse-5 {
       left: 270px;
-      top: 120px;
     }
 
     .ellipse-7 {
@@ -269,12 +334,10 @@ span {
   @media (max-width: 500px) {
     .ellipse-4 {
       left: 220px;
-      top: -80px;
     }
 
     .ellipse-5 {
-      left: 130px;
-      top: 230px;
+      top: 160px;
     }
 
     .ellipse-7 {
@@ -283,28 +346,57 @@ span {
     }
 
     .ellipse-mobile {
-      left: -100px;
+      left: -30px;
       top: 750px;
     }
+    .ellipse-6-new {
+      left: -100px;
+      top: 250px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .ellipse-mobile {
+    left: -80px;
+    top: 750px;
+  }
+
+  .ellipse-5 {
+    left: 220px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ellipse-5 {
+    top: 240px;
   }
 }
 
 @media (max-width: 400px) {
+  .ellipse-5 {
+    left: 180px;
+  }
   .ellipse-7 {
     left: 0px;
   }
+  .ellipse-8 {
+    top: 1910px;
+    left: 240px;
+  }
 
   .ellipse-mobile {
-    left: -170px;
+    left: -130px;
     top: 750px;
   }
 }
 
 @media (max-width: 360px) {
   section {
-    margin: 10px;
+    padding: 10px;
   }
-
+  .ellipse-4 {
+    top: -70px;
+  }
   .ellipse-mobile {
     left: -120px;
     scale: 0.3;

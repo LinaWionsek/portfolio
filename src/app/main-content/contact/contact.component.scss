@@ -352,7 +352,11 @@ input[type="checkbox"]:checked::before {
     transform: translateX(400%);
   }
 }
-
+@media (max-width: 1440px) {
+  section {
+    width: 100%
+  }
+}
 @media (max-width: 1350px) {
   .ellipse-12 {
     right: -92px;
@@ -412,7 +416,7 @@ input[type="checkbox"]:checked::before {
 
 @media (max-width: 900px) {
   section {
-    padding: 25px;
+    padding: 50px 25px;
   }
 
   h1 {
