@@ -287,7 +287,9 @@ span {
     left: 0px;
     top: 220px;
   }
-
+  .ellipse-mobile {
+    top: 700px;
+  }
   .ellipse-4,
   .ellipse-5,
   .ellipse-7,
@@ -347,18 +349,18 @@ span {
 
     .ellipse-mobile {
       left: -30px;
-      top: 750px;
+      top: 700px;
     }
     .ellipse-6-new {
       left: -100px;
-      top: 250px;
+      top: 220px;
     }
   }
 }
 @media (max-width: 450px) {
   .ellipse-mobile {
     left: -80px;
-    top: 750px;
+    top: 700px;
   }
 
   .ellipse-5 {
@@ -386,7 +388,7 @@ span {
 
   .ellipse-mobile {
     left: -130px;
-    top: 750px;
+    top: 700px;
   }
 }
 
@@ -400,6 +402,6 @@ span {
   .ellipse-mobile {
     left: -120px;
     scale: 0.3;
-    top: 800px;
+    top: 750px;
   }
 }

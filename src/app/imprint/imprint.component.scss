@@ -3,9 +3,8 @@
 section {
   font-family: $montserratFont;
   font-size: 16px;
-  background: linear-gradient(to bottom, white, #ffeaea);
   padding: 100px;
-  height: 100vh;
+  width: 1440px;
 }
 
 ::ng-deep p {
@@ -13,9 +12,14 @@ section {
 }
 
 ::ng-deep a {
-    color: black;
+  color: black;
 }
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to bottom, white, #ffeaea);
+}
 .img-container {
   display: flex;
   justify-content: flex-end;
@@ -27,7 +31,11 @@ section {
     }
   }
 }
-
+@media (max-width: 1440px) {
+  section {
+    width: 100%;
+  }
+}
 @media (max-width: 1280px) {
   section {
     padding: 50px;
