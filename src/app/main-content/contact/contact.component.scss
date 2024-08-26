@@ -6,7 +6,6 @@
 }
 
 section {
- 
   width: 1440px;
   display: flex;
   flex-direction: column;
@@ -147,13 +146,6 @@ textarea {
       border-radius: 36px;
       cursor: pointer;
     }
-    .consent-statement {
-      a {
-        color: $red;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-    }
   }
 }
 
@@ -162,10 +154,10 @@ textarea {
   font-family: $montserratFont;
   a {
     color: $red;
+    text-decoration: none;
     &:hover {
+      color: #f00000;
       cursor: pointer;
-      text-decoration: underline;
-      font-weight: bold;
     }
   }
 }
@@ -354,7 +346,7 @@ input[type="checkbox"]:checked::before {
 }
 @media (max-width: 1440px) {
   section {
-    width: 100%
+    width: 100%;
   }
 }
 @media (max-width: 1350px) {
