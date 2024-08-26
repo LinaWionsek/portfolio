@@ -1,7 +1,7 @@
 <section>
     <div class="content">
         @for(singleproject of projectsservice.projects; track singleproject.name; let index = $index;){
-        <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" [attr.data-aos]="index === 1 ? 'zoom-in-right' : 'zoom-in-left'"  [attr.data-aos-duration]="2000" class="project-container">
+        <div [ngStyle]="{ 'flex-direction': index === 1 ? 'row-reverse' : 'row' }" data-aos="zoom-in-up"  data-aos-duration="2000" class="project-container">
             <a [href]="singleproject.demo" target="_blank" class="project-demo">
                 <img src="/img/{{singleproject.img}}" class="project-img">
             </a>
