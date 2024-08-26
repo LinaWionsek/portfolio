@@ -131,6 +131,9 @@ hr {
     }
   }
 }
+.z-index-5{
+  z-index: 5;
+}
 
 .show {
   display: flex;
@@ -146,14 +149,14 @@ hr {
   z-index: 5;
   &:hover {
     cursor: pointer;
-    content: url("../../../../public/img/burger_hover.png");
+    background-image: url("../../../../public/img/burger_hover.png");
   }
 }
 
 .close-symbol {
   &:hover {
     cursor: pointer;
-    content: url("../../../../public/img/close_hover.png");
+    background-image: url("../../../../public/img/close_hover.png");
   }
 }
 
