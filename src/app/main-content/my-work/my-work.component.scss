@@ -272,7 +272,7 @@ span {
   }
   .ellipse-8 {
     top: 1870px;
-    left: 210px;
+    left: 590px;
   }
   .ellipse-9 {
     left: -73px;
@@ -297,6 +297,12 @@ span {
   .ellipse-9,
   .ellipse-mobile {
     scale: 0.4;
+  }
+  @media (max-width: 770px) {
+    .ellipse-8 {
+      top: 1870px;
+      left: 530px;
+    }
   }
 
   @media (max-width: 750px) {
@@ -329,7 +335,10 @@ span {
       left: 270px;
       top: 730px;
     }
-
+    .ellipse-8 {
+      top: 1870px;
+      left: 430px;
+    }
     .ellipse-mobile {
       left: 10px;
     }
@@ -347,6 +356,10 @@ span {
     .ellipse-7 {
       left: 150px;
       top: 730px;
+    }
+    .ellipse-8 {
+      top: 1810px;
+      left: 345px;
     }
 
     .ellipse-mobile {
@@ -384,8 +397,8 @@ span {
     left: 0px;
   }
   .ellipse-8 {
-    top: 1910px;
-    left: 240px;
+    top: 1950px;
+    left: 260px;
   }
 
   .ellipse-mobile {
