@@ -47,6 +47,9 @@
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 54px;
   width: 137px;
   border-radius: 10px;
@@ -79,7 +82,10 @@
   gap: 30px;
 }
 .live-test-btn {
-  display: block;
+  // display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 54px;
   width: 125px;
   border-radius: 10px;
