@@ -239,6 +239,9 @@ input[type="checkbox"]:checked::before {
 }
 
 .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   height: 58px;
   font-size: 23px;
