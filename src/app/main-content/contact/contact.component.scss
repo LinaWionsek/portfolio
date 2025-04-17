@@ -6,8 +6,7 @@
 }
 
 section {
-  background: linear-gradient(to bottom, #ffffff, #ffeaea);
-  width: 100%;
+  width: 1440px;
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -84,6 +83,14 @@ textarea {
   min-width: 617px;
   margin-bottom: 4px;
 }
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #ffeaea);
+}
+
 .warning-field {
   height: 20px;
   display: flex;
@@ -139,13 +146,6 @@ textarea {
       border-radius: 36px;
       cursor: pointer;
     }
-    .consent-statement {
-      a {
-        color: $red;
-        text-decoration: underline;
-        font-weight: bold;
-      }
-    }
   }
 }
 
@@ -154,10 +154,10 @@ textarea {
   font-family: $montserratFont;
   a {
     color: $red;
+    text-decoration: none;
     &:hover {
+      color: #f00000;
       cursor: pointer;
-      text-decoration: underline;
-      font-weight: bold;
     }
   }
 }
@@ -239,6 +239,9 @@ input[type="checkbox"]:checked::before {
 }
 
 .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   height: 58px;
   font-size: 23px;
@@ -344,7 +347,11 @@ input[type="checkbox"]:checked::before {
     transform: translateX(400%);
   }
 }
-
+@media (max-width: 1440px) {
+  section {
+    width: 100%;
+  }
+}
 @media (max-width: 1350px) {
   .ellipse-12 {
     right: -92px;
@@ -404,7 +411,7 @@ input[type="checkbox"]:checked::before {
 
 @media (max-width: 900px) {
   section {
-    padding: 25px;
+    padding: 50px 25px;
   }
 
   h1 {

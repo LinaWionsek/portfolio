@@ -1,41 +1,43 @@
-<section>
-    <nav>
-        <div class="logo">
-            <img src="/img/logo_new.png" alt="">
-        </div>
-        <div class="menu-container">
-            <div class="nav-links">
-                <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a>
-                <a (click)="scrollTo('my_skills')">{{ 'header-skills' | translate }}</a>
-                <a (click)="scrollTo('my_work')">{{ 'header-work' | translate }}</a>
+<div class="wrapper">
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="/img/logo_new.png" alt="">
             </div>
-            <div class="language">
-                <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
-                <hr>
-                <a (click)="translateText('de')" [ngClass]="{'active': !englishLang}">DE</a>
-            </div>
-        </div>
-        <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()" alt="">
-    </nav>
-    <div class="dialog" [ngClass]="{'show': show, 'hide': !show}">
-        <div class="dialog-header">
-            <a href="" class="logo">
-                <img src="/img/p_red.png" alt="">
-            </a>
-            <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()" alt="">
-        </div>
-        <div class="dialog-links">
-            <a (click)="scrollTo('about_me')" (click)="closeDialog()">{{ 'header-about' | translate }}</a>
-            <a (click)="scrollTo('my_skills')" (click)="closeDialog()">{{ 'header-skills' | translate }}</a>
-            <a (click)="scrollTo('my_work')" (click)="closeDialog()">{{ 'header-work' | translate }}</a>
-            <a (click)="scrollTo('contact')" (click)="closeDialog()">{{ 'contact' | translate }}</a>
-            <div class="language-mobile">
-                <div>
+            <div class="menu-container">
+                <div class="nav-links">
+                    <a (click)="scrollTo('about_me')">{{ 'header-about' | translate }}</a>
+                    <a (click)="scrollTo('my_skills')">{{ 'header-skills' | translate }}</a>
+                    <a (click)="scrollTo('my_work')">{{ 'header-work' | translate }}</a>
+                </div>
+                <div class="language">
                     <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
                     <hr>
                     <a (click)="translateText('de')" [ngClass]="{'active': !englishLang}">DE</a>
                 </div>
             </div>
+            <img class="burger-menu" src="/img/burger.png" (click)="changeShowStatus()" alt="">
+        </nav>
+        <div class="dialog" [ngClass]="{'show': show, 'hide': !show}">
+            <div class="dialog-header">
+                <a href="" class="logo">
+                    <img src="/img/p_red.png" alt="">
+                </a>
+                <img class="close-symbol" src="/img/close.png" (click)="changeShowStatus()" alt="">
+            </div>
+            <div class="dialog-links">
+                <a (click)="scrollTo('about_me')" (click)="closeDialog()">{{ 'header-about' | translate }}</a>
+                <a (click)="scrollTo('my_skills')" (click)="closeDialog()">{{ 'header-skills' | translate }}</a>
+                <a (click)="scrollTo('my_work')" (click)="closeDialog()">{{ 'header-work' | translate }}</a>
+                <a (click)="scrollTo('contact')" (click)="closeDialog()">{{ 'contact' | translate }}</a>
+                <div class="language-mobile">
+                    <div>
+                        <a (click)="translateText('en')" [ngClass]="{'active': englishLang}">EN</a>
+                        <hr>
+                        <a (click)="translateText('de')" [ngClass]="{'active': !englishLang}">DE</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>

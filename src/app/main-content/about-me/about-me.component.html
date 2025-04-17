@@ -1,18 +1,23 @@
-<section>
-    <img src="/img/ellipse2.png" class="ellipse-2" alt="">
-    <img src="/img/ellipse3.png" class="ellipse-3" alt="">
-    <div class="work-together-container">
-        <div class="headline-container">
-            <span class="headline" data-aos="slide-right" data-aos-duration="1000"> {{ 'indroduction-title' | translate }}</span>
+<div class="wrapper">
+    <section>
+
+        <img src="/img/ellipse2.png" class="ellipse-2" alt="">
+        <img src="/img/ellipse3.png" class="ellipse-3" alt="">
+        <div class="work-together-container">
+            <div class="headline-container">
+                <span class="headline" data-aos="slide-right" data-aos-duration="1000"> {{ 'indroduction-title' |
+                    translate }}</span>
+            </div>
+            <div class="description-container">
+                <span>
+                    {{ 'indroduction-description-1' | translate }}
+                    {{ 'indroduction-description-2' | translate }}
+                    <br><br>
+                    {{ 'indroduction-description-3' | translate }}
+                </span>
+                <button (click)="scrollToContactForm()" class="btn"> {{ 'indroduction-button' | translate }}</button>
+            </div>
         </div>
-        <div class="description-container">
-            <span>
-                {{ 'indroduction-description-1' | translate }}
-                {{ 'indroduction-description-2' | translate }}
-                <br><br>
-                {{ 'indroduction-description-3' | translate }}
-            </span>
-            <button (click)="scrollToContactForm()" class="btn"> {{ 'indroduction-button' | translate }}</button>
-        </div>
-    </div>
-</section>
+
+    </section>
+</div>

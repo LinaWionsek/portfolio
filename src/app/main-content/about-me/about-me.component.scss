@@ -3,9 +3,14 @@
 section {
   @include dFlex(center, center);
   flex-direction: column;
-  margin: 0px 100px 100px 100px;
+  padding: 0px 100px 100px 100px;
+  width: 1440px;
 }
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .work-together-container {
   @include dFlex(space-between, flex-start);
   width: 100%;
@@ -96,10 +101,14 @@ section {
     cursor: pointer;
   }
 }
-
+@media (max-width: 1440px) {
+  section {
+    width: 100%
+  }
+}
 @media (max-width: 1280px) {
   section {
-    margin: 0px 50px 50px 50px;
+    padding: 0px 50px 50px 50px;
   }
 
   .work-together-container {
@@ -115,7 +124,7 @@ section {
 
 @media (max-width: 900px) {
   section {
-    margin: 0px 25px 50px 25px;
+    padding: 0px 25px 50px 25px;
   }
 
   .work-together-container {
@@ -170,6 +179,6 @@ section {
 
 @media (max-width: 360px) {
   section {
-    margin: 0px 10px 20px 10px;
+    padding: 0px 10px 20px 10px;
   }
 }

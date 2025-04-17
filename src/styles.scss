@@ -12,6 +12,10 @@
 body {
   overflow-x: hidden;
 }
+app-imprint {
+  display: flex;
+  flex: 1;
+}
 
 @media (max-width: 900px) {
   * {

@@ -1,13 +1,19 @@
 @import "../../../styles.scss";
 
 section {
-  width: 100%;
+  width: 1440px;
 }
 
 nav {
   height: 120px;
   margin: 0px 100px;
   @include dFlex(space-between, center);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .menu-container {
   height: 100%;
@@ -37,7 +43,7 @@ nav {
   width: 80px;
   padding-top: 1px;
   > img {
-   height: 100%
+    height: 100%;
   }
 }
 
@@ -125,9 +131,13 @@ hr {
     }
   }
 }
+.z-index-5{
+  z-index: 5;
+}
 
 .show {
   display: flex;
+  width: 100vw;
 }
 
 .hide {
@@ -139,18 +149,24 @@ hr {
   z-index: 5;
   &:hover {
     cursor: pointer;
-    content: url("../../../../public/img/burger_hover.png");
+    background-image: url("../../../../public/img/burger_hover.png");
   }
 }
 
 .close-symbol {
   &:hover {
     cursor: pointer;
-    content: url("../../../../public/img/close_hover.png");
+    background-image: url("../../../../public/img/close_hover.png");
   }
 }
 
 // Media
+
+@media (max-width: 1440px) {
+  section {
+    width: 100%;
+  }
+}
 @media (max-width: 1280px) {
   nav {
     margin: 0px 50px;

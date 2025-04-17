@@ -3,7 +3,7 @@
 section {
   font-family: $montserratFont;
   font-size: 16px;
-  background: linear-gradient(to bottom, white, #ffeaea);
+  width: 1440px;
   padding: 100px;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,12 @@ section {
 ::ng-deep h2 {
   margin: 16px 0px;
 }
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(to bottom, white, #ffeaea);
+}
 .img-container {
   display: flex;
   justify-content: flex-end;
@@ -33,6 +38,11 @@ section {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+@media (max-width: 1440px) {
+  section {
+    width: 100%;
   }
 }
 
