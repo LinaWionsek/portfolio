@@ -17,6 +17,17 @@ export class ProjectsService {
    */
   projects = [
     {
+      img: 'dabubble.png',
+      name: 'DA Bubble',
+      tech_stack: 'Angular | TypeScript | HTML | SCSS | Firebase ',
+      description:
+        'A real-time chat application for team communication, inspired by Slack. Connect with your team in real time, via direct messages or in a channel.',
+      description_de:
+        'Eine Echtzeit-Chat-Anwendung für Teamkommunikation, inspiriert von Slack. Tausche dich in Echtzeit mit deinem Team aus: per Direktnachricht oder in einem Channel.',
+      demo: 'https://dabubble.lina-wionsek.de/',
+      github: 'https://github.com/LinaWionsek/dabubble',
+    },
+    {
       img: 'join.png',
       name: 'Join',
       tech_stack: 'JavaScript | HTML | CSS | Firebase ',
