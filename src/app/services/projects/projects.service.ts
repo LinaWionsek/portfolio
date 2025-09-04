@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ProjectsService {
-  constructor() {}
+  constructor() { }
 
   /**
    * Array of project objects.
@@ -25,7 +25,20 @@ export class ProjectsService {
       description_de:
         'Eine Echtzeit-Chat-Anwendung für Teamkommunikation, inspiriert von Slack. Tauschen Sie sich in Echtzeit mit Ihrem Team aus: per Direktnachricht oder in einem Channel.',
       demo: 'https://dabubble.lina-wionsek.de/',
+      demo_label: 'Live test',
       github: 'https://github.com/LinaWionsek/dabubble',
+    },
+    {
+      img: 'timetracker.jpg',
+      name: 'Time Tracker',
+      tech_stack: 'Angular | TypeScript | HTML | SCSS | Firebase ',
+      description:
+        'Application for time tracking. Filter entries by user and evaluate times in weekly and monthly views.',
+      description_de:
+        'Anwendung zur Arbeitszeiterfassung. Filtern Sie Einträge nach Nutzern und werten Sie Zeiten in Wochen- und Monatsansichten aus.',
+      demo: 'https://www.linkedin.com/posts/lina-wionsek-042719297_mein-time-tracker-ist-endlich-fertig-ich-activity-7353688310147346434-M3us?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfU0fIBcxCdk_r-gqOtooCnjHo5lE03Lcs',
+      demo_label: 'LinkedIn',
+      github: null,
     },
     {
       img: 'join.png',
@@ -36,6 +49,7 @@ export class ProjectsService {
       description_de:
         'Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Benutzer und Kategorien zu.',
       demo: 'https://join.lina-wionsek.de/',
+      demo_label: 'Live test',
       github: 'https://github.com/LinaWionsek/join',
     },
     {
@@ -47,6 +61,7 @@ export class ProjectsService {
       description_de:
         'Spring-, Renn- und Wurfspiel basierend auf objektorientiertem Ansatz. Helfen Sie Pepe dabei, Münzen und Tabasco-Sauce zu finden, um gegen die verrückte Henne zu kämpfen.',
       demo: 'http://polloloco.lina-wionsek.de/',
+      demo_label: 'Live test',
       github: 'https://github.com/LinaWionsek/el-pollo-loco',
     },
     {
@@ -58,6 +73,7 @@ export class ProjectsService {
       description_de:
         'Basierend auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
       demo: 'http://pokedex.lina-wionsek.de/',
+      demo_label: 'Live test',
       github: 'https://github.com/LinaWionsek/Pokedex',
     },
   ];
